@@ -1,0 +1,3541 @@
+/*1) How many passengers departed Colorado on all airlines? Display the following information in this format:
+Complete city name, complete state name (not the 2 character abbreviation), Airport name, Airport code (the 3
+character code), the complete airline name, and the number of passengers.*/
+
+ORIGIN_CITY_NAME	ORIGIN_STATE_NM	AIRPORT_CODE	AIRLINE_NAME	PASSENGERS
+Colorado Springs, CO	Colorado	COS	Alaska Airlines Inc.	156.00
+Denver, CO	Colorado	DEN	Trans States Airlines	34.00
+Denver, CO	Colorado	APA	Peninsula Airways Inc.	5.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	343.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	176.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	37.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	645.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	423.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	82.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	5.00
+Pueblo, CO	Colorado	PUB	Great Lakes Airlines	5.00
+Denver, CO	Colorado	DEN	Boutique Air	6.00
+Denver, CO	Colorado	DEN	Virgin America	117.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	43.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	41.00
+Eagle, CO	Colorado	EGE	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	22.00
+Denver, CO	Colorado	DEN	Ameristar Air Cargo	0.00
+Colorado Springs, CO	Colorado	COS	Allegiant Air	156.00
+Aspen, CO	Colorado	ASE	Avjet Corporation	3.00
+Eagle, CO	Colorado	EGE	Avjet Corporation	3.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	62.00
+Colorado Springs, CO	Colorado	COS	Delta Air Lines Inc.	160.00
+Colorado Springs, CO	Colorado	COS	Delta Air Lines Inc.	139.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	129.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	62.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	148.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	150.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	149.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	102.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	50.00
+Colorado Springs, CO	Colorado	COS	Miami Air International	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	70.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	152.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	122.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	174.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	163.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	200.00
+Colorado Springs, CO	Colorado	COS	Southwest Airlines Co.	281.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	142.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	160.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	164.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	143.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	132.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	143.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	165.00
+Colorado Springs, CO	Colorado	COS	Southwest Airlines Co.	120.00
+Denver, CO	Colorado	APA	Jet Aviation Flight Services, Inc.	1.00
+Denver, CO	Colorado	APA	Jet Aviation Flight Services, Inc.	0.00
+Denver, CO	Colorado	APA	Jet Aviation Flight Services, Inc.	1.00
+Denver, CO	Colorado	DEN	Omni Air International LLC	0.00
+Denver, CO	Colorado	DEN	Swift Air, LLC	21.00
+Denver, CO	Colorado	DEN	Swift Air, LLC	0.00
+Denver, CO	Colorado	DEN	Swift Air, LLC	45.00
+Grand Junction, CO	Colorado	GJT	Swift Air, LLC	138.00
+Denver, CO	Colorado	DEN	Kalitta Charters II	0.00
+Denver, CO	Colorado	DEN	CFM Inc d/b/a Contour Airlines	14.00
+Denver, CO	Colorado	DEN	Sun Country Airlines d/b/a MN Airlines	286.00
+Fort Collins/Loveland, CO	Colorado	FNL	Sun Country Airlines d/b/a MN Airlines	149.00
+Montrose/Delta, CO	Colorado	MTJ	Sun Country Airlines d/b/a MN Airlines	93.00
+Pueblo, CO	Colorado	PUB	Sun Country Airlines d/b/a MN Airlines	154.00
+Denver, CO	Colorado	DEN	Southern Air Inc.	0.00
+Pueblo, CO	Colorado	PUB	USA Jet Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	45.00
+Durango, CO	Colorado	DRO	Trans States Airlines	47.00
+Montrose/Delta, CO	Colorado	MTJ	Envoy Air	48.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	88.00
+Colorado Springs, CO	Colorado	COS	ExpressJet Airlines Inc.	47.00
+Denver, CO	Colorado	DEN	ExpressJet Airlines Inc.	47.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	40.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	34.00
+Grand Junction, CO	Colorado	GJT	Allegiant Air	113.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	150.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	133.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	124.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	168.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	74.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	150.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	101.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	110.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	281.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	155.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	70.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	46.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	70.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	62.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	69.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	58.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	45.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	43.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	67.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	69.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	69.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	48.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	63.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	63.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	65.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	40.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	76.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	50.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	68.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	73.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	144.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	154.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	150.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	144.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	89.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	86.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	126.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	200.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	126.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	106.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	137.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	102.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	121.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	134.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	99.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	128.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	105.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	126.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	162.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	119.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	124.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	128.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	121.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	140.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	128.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	136.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	133.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	138.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	139.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	163.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	141.00
+Colorado Springs, CO	Colorado	COS	Republic Airlines	73.00
+Denver, CO	Colorado	DEN	Republic Airlines	70.00
+Denver, CO	Colorado	DEN	Republic Airlines	65.00
+Denver, CO	Colorado	DEN	Republic Airlines	60.00
+Denver, CO	Colorado	DEN	Republic Airlines	33.00
+Denver, CO	Colorado	DEN	Republic Airlines	65.00
+Denver, CO	Colorado	DEN	Republic Airlines	69.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	143.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	64.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	178.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	113.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	180.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	126.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	136.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	180.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	110.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	145.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	151.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	136.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	144.00
+Montrose/Delta, CO	Colorado	MTJ	Mesa Airlines Inc.	66.00
+Denver, CO	Colorado	DEN	Endeavor Air Inc.	139.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	267.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	251.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	356.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	133.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	125.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	124.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	87.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	91.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	146.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	138.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	73.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	64.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	275.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	244.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	322.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	269.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	180.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	318.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	205.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	243.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	250.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	49.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	165.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	274.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	254.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	265.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	253.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	204.00
+Denver, CO	Colorado	DEN	Republic Airlines	112.00
+Denver, CO	Colorado	DEN	Republic Airlines	137.00
+Denver, CO	Colorado	DEN	Republic Airlines	132.00
+Denver, CO	Colorado	DEN	Republic Airlines	127.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	274.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	295.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	290.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	299.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	100.00
+Denver, CO	Colorado	DEN	Trans States Airlines	123.00
+Denver, CO	Colorado	DEN	Trans States Airlines	132.00
+Denver, CO	Colorado	DEN	Trans States Airlines	141.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	199.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	199.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	191.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	119.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	193.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	211.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	192.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	203.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	115.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	135.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	141.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	192.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	131.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	131.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	201.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	206.00
+Montrose/Delta, CO	Colorado	MTJ	SkyWest Airlines Inc.	140.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	358.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	346.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	462.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	331.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	513.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	388.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	383.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	400.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	347.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	424.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	391.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	385.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	417.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	481.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	417.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	330.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	350.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	374.00
+Denver, CO	Colorado	DEN	Republic Airlines	193.00
+Denver, CO	Colorado	DEN	Republic Airlines	190.00
+Denver, CO	Colorado	DEN	Republic Airlines	169.00
+Denver, CO	Colorado	DEN	Republic Airlines	197.00
+Denver, CO	Colorado	DEN	Republic Airlines	213.00
+Denver, CO	Colorado	DEN	Republic Airlines	122.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	424.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	445.00
+Denver, CO	Colorado	DEN	Trans States Airlines	185.00
+Montrose/Delta, CO	Colorado	MTJ	Envoy Air	146.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Grand Junction, CO	Colorado	GJT	Compass Airlines	126.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	483.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	265.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	255.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	188.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	260.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	277.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	236.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	164.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	555.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	623.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	571.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	588.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	503.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	479.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	545.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	638.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	754.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	456.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	615.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	397.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	497.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	668.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	506.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	651.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	549.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	553.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	677.00
+Denver, CO	Colorado	DEN	Republic Airlines	276.00
+Denver, CO	Colorado	DEN	Republic Airlines	256.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	693.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	561.00
+Denver, CO	Colorado	DEN	Sun Country Airlines d/b/a MN Airlines	505.00
+Denver, CO	Colorado	DEN	Trans States Airlines	209.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	13.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	281.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	308.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	359.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	180.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	365.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	280.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	314.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	364.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	228.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	299.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	192.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	142.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	197.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	230.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	581.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	461.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	813.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	500.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1483.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	528.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	632.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	602.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	694.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	592.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	490.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	633.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	665.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	697.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	877.00
+Denver, CO	Colorado	DEN	Trans States Airlines	251.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	387.00
+Montrose/Delta, CO	Colorado	MTJ	GoJet Airlines LLC d/b/a United Express	349.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	363.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	412.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	272.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	190.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	850.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	727.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	930.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	795.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	780.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	811.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	801.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1157.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	989.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	753.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	994.00
+Denver, CO	Colorado	DEN	Republic Airlines	308.00
+Denver, CO	Colorado	DEN	Republic Airlines	400.00
+Denver, CO	Colorado	DEN	Republic Airlines	387.00
+Denver, CO	Colorado	DEN	Republic Airlines	397.00
+Colorado Springs, CO	Colorado	COS	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	298.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Grand Junction, CO	Colorado	GJT	Allegiant Air	921.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	453.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	430.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	489.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	904.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	862.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	701.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	869.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	802.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	706.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1153.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	772.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	761.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	780.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1144.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	944.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1152.00
+Denver, CO	Colorado	DEN	Trans States Airlines	371.00
+Gunnison, CO	Colorado	GUC	Trans States Airlines	245.00
+Hayden, CO	Colorado	HDN	Trans States Airlines	344.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	876.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	523.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	397.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	642.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1038.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1017.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1240.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	945.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1016.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1072.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1323.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	922.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1209.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1010.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1105.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	986.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1099.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1062.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	917.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Colorado Springs, CO	Colorado	COS	Allegiant Air	1257.00
+Colorado Springs, CO	Colorado	COS	Allegiant Air	1268.00
+Grand Junction, CO	Colorado	GJT	Allegiant Air	1267.00
+Denver, CO	Colorado	DEN	Via Airlines d/b/a Charter Air Transport	344.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	356.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	651.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	409.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	549.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	486.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1254.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1266.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1056.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1296.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	1275.00
+Denver, CO	Colorado	DEN	Trans States Airlines	403.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	13.00
+Telluride, CO	Colorado	TEX	Great Lakes Airlines	11.00
+Cortez, CO	Colorado	CEZ	Boutique Air	77.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	444.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	690.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	667.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1358.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1248.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1089.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1073.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1332.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1178.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1691.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1359.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	1366.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	503.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	1341.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1180.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1532.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1609.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1689.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1761.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1619.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1806.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	1388.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	776.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	528.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1716.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1426.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1878.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1498.00
+Denver, CO	Colorado	DEN	JetBlue Airways	1704.00
+Denver, CO	Colorado	DEN	Allegiant Air	1776.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	762.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1495.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1903.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1926.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1870.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1836.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1772.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	1855.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2180.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	1820.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	1849.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2007.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2082.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2602.00
+Denver, CO	Colorado	DEN	Trans States Airlines	637.00
+Denver, CO	Colorado	DEN	Trans States Airlines	565.00
+Colorado Springs, CO	Colorado	COS	Horizon Air	1004.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	1007.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2231.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2455.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Cortez, CO	Colorado	CEZ	Boutique Air	117.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	605.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2324.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2728.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2234.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2227.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	0.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	679.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	3355.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1129.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1048.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2665.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3223.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2875.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2193.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2123.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2319.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	2891.00
+Colorado Springs, CO	Colorado	COS	Trans States Airlines	801.00
+Denver, CO	Colorado	DEN	Trans States Airlines	769.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	918.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1058.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	888.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2741.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2115.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2160.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3066.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2620.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2097.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1747.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2494.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2922.00
+Denver, CO	Colorado	DEN	Republic Airlines	1052.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	799.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1235.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2272.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2077.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3116.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2211.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2274.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2356.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4382.00
+Denver, CO	Colorado	DEN	Republic Airlines	1203.00
+Denver, CO	Colorado	DEN	Republic Airlines	1222.00
+Denver, CO	Colorado	DEN	Republic Airlines	1232.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	2198.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	642.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1219.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	893.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1343.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	727.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2533.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2539.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1873.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2451.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2357.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2185.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2786.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2694.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2630.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3315.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3185.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1220.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1345.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	987.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2821.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3082.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2389.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2839.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2401.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3102.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3465.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2247.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1683.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2102.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3148.00
+Denver, CO	Colorado	DEN	Republic Airlines	1354.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1332.00
+Hayden, CO	Colorado	HDN	GoJet Airlines LLC d/b/a United Express	1184.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	696.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2543.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3055.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2489.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1559.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6174.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3714.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3766.00
+Denver, CO	Colorado	DEN	Republic Airlines	1430.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3366.00
+Colorado Springs, CO	Colorado	COS	Federal Express Corporation	0.00
+Hayden, CO	Colorado	HDN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1046.00
+Montrose/Delta, CO	Colorado	MTJ	ExpressJet Airlines Inc.	916.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1245.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1602.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1484.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1087.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1653.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1379.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1578.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3729.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2485.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3760.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2970.00
+Colorado Springs, CO	Colorado	COS	ExpressJet Airlines Inc.	962.00
+Denver, CO	Colorado	DEN	Boutique Air	176.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	2380.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1462.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	925.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3576.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3070.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3383.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3898.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2282.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3552.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3711.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3779.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3238.00
+Denver, CO	Colorado	DEN	Republic Airlines	1289.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3723.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1698.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3610.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3660.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2745.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2893.00
+Denver, CO	Colorado	DEN	Republic Airlines	1666.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3543.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3589.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1231.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1208.00
+Montrose/Delta, CO	Colorado	MTJ	Trans States Airlines	880.00
+Alamosa, CO	Colorado	ALS	Boutique Air	93.00
+Cortez, CO	Colorado	CEZ	Boutique Air	193.00
+Durango, CO	Colorado	DRO	Empire Airlines Inc.	0.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	1369.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1537.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1538.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1409.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1036.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2976.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3362.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3680.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	3208.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3677.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3388.00
+Durango, CO	Colorado	DRO	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Sun Country Airlines d/b/a MN Airlines	2861.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1906.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1722.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1860.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1016.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1387.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1997.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4385.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3896.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3647.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2703.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4551.00
+Colorado Springs, CO	Colorado	COS	Republic Airlines	1667.00
+Denver, CO	Colorado	DEN	Republic Airlines	1616.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1038.00
+Colorado Springs, CO	Colorado	COS	ExpressJet Airlines Inc.	1158.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	2610.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	3163.00
+Eagle, CO	Colorado	EGE	American Airlines Inc.	2489.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4451.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1686.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	1880.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1111.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4488.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4400.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3949.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	3838.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	4466.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	5775.00
+Montrose/Delta, CO	Colorado	MTJ	Mesa Airlines Inc.	1648.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	4548.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1155.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	3826.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	4379.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	1193.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1346.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4615.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4558.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9532.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3446.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5596.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3896.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4516.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4719.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4577.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4100.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	4442.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	4446.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	4242.00
+Montrose/Delta, CO	Colorado	MTJ	Mesa Airlines Inc.	1099.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	4766.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1222.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	4970.00
+Colorado Springs, CO	Colorado	COS	Delta Air Lines Inc.	4155.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	1101.00
+Eagle, CO	Colorado	EGE	GoJet Airlines LLC d/b/a United Express	1074.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	1822.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1409.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2140.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1635.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1231.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9692.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4156.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4468.00
+Denver, CO	Colorado	DEN	Republic Airlines	1973.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	4166.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	3970.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4906.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4042.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5791.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	6024.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4238.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4019.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4253.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5830.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5262.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	6427.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4884.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5282.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5107.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	6484.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4952.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4247.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4881.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5035.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	6608.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	6379.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5959.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4193.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	4029.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	3682.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	4741.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1394.00
+Denver, CO	Colorado	DEN	United Parcel Service	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1922.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1379.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1809.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3211.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4354.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4866.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4038.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3996.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	6614.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5280.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4522.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1743.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3890.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5118.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5247.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5184.00
+Denver, CO	Colorado	DEN	Republic Airlines	1891.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	4642.00
+Denver, CO	Colorado	DEN	JetBlue Airways	5404.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1458.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1445.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5318.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5468.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1381.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	4423.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3904.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4826.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5383.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1694.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1456.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	5660.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1473.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4739.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3967.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5859.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5678.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	5851.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	6096.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	1487.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1519.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5509.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4411.00
+Colorado Springs, CO	Colorado	COS	Republic Airlines	2188.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4559.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5611.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4159.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5164.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4461.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4958.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4990.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4886.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	3939.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1382.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5135.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4814.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5182.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4784.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4415.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	382.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4638.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3976.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4739.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5843.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2660.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2630.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2448.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1887.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4866.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6536.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4337.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4489.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	3017.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	2565.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6246.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7006.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7196.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7402.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7077.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	3004.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6406.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	9407.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	3249.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	3110.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7491.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7767.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	385.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6450.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5287.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6895.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7485.00
+Denver, CO	Colorado	DEN	Republic Airlines	3090.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	7288.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2134.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7386.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	7029.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	6666.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	3165.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	2769.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2083.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2747.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	2024.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2016.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	1892.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	730.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	2245.00
+Denver, CO	Colorado	DEN	Trans States Airlines	1759.00
+Cortez, CO	Colorado	CEZ	Boutique Air	385.00
+Denver, CO	Colorado	DEN	Boutique Air	312.00
+Denver, CO	Colorado	DEN	Boutique Air	346.00
+Denver, CO	Colorado	DEN	Boutique Air	250.00
+Denver, CO	Colorado	DEN	Boutique Air	345.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	828.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1949.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1185.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1975.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7204.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2043.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	3095.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7770.00
+Denver, CO	Colorado	DEN	Republic Airlines	3288.00
+Denver, CO	Colorado	DEN	Boutique Air	377.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	2274.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	3739.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8320.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6379.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6864.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	7563.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	9463.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	3151.00
+Montrose/Delta, CO	Colorado	MTJ	GoJet Airlines LLC d/b/a United Express	2931.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1957.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6807.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2258.00
+Denver, CO	Colorado	DEN	Boutique Air	247.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1970.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2215.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2485.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	1516.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7746.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8156.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7547.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7652.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	8998.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	8093.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2581.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	2603.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8385.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7873.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6700.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	9398.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2362.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2640.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	5771.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	3772.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	4104.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6906.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9769.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7503.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	8258.00
+Denver, CO	Colorado	DEN	JetBlue Airways	7713.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2200.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	8248.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6189.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	11739.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	12093.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	9401.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2567.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	8320.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	1761.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2436.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2397.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2645.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	3386.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	3171.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9290.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	9170.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	9390.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	10202.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	10040.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	10642.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7814.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7995.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	3039.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2909.00
+Grand Junction, CO	Colorado	GJT	Trans States Airlines	2600.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	10852.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2586.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2787.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9640.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2710.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2496.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	2345.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8437.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8081.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	8701.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9871.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9408.00
+Denver, CO	Colorado	DEN	Trans States Airlines	3000.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	11333.00
+Denver, CO	Colorado	DEN	Trans States Airlines	2893.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9705.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	8432.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10120.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12180.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12212.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	11953.00
+Denver, CO	Colorado	DEN	Boutique Air	506.00
+Alamosa, CO	Colorado	ALS	Boutique Air	530.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	236.00
+Pueblo, CO	Colorado	PUB	Great Lakes Airlines	231.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	12963.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	11879.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	10909.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	12461.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	2780.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	12112.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	13293.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9579.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	8618.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10664.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	13447.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9727.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10912.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10509.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	11440.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13559.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10038.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	13156.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	3831.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	11518.00
+Denver, CO	Colorado	DEN	Virgin America	9926.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13995.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	9410.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	3526.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13200.00
+Durango, CO	Colorado	DRO	Mesa Airlines Inc.	5087.00
+Grand Junction, CO	Colorado	GJT	Envoy Air	5171.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	5911.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	12937.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12290.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13038.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12813.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	7262.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	13560.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	14717.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13592.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13584.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	7633.00
+Durango, CO	Colorado	DRO	GoJet Airlines LLC d/b/a United Express	6090.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	6129.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	14048.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	14255.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	19851.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	5618.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	17542.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	17304.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	5616.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	9644.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	18123.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	18725.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	18170.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	21215.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	22682.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	22113.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	18575.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	21654.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	23511.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	7698.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	9173.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	30124.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	24681.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	27616.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	37440.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	34857.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	31619.00
+
+
+
+/*2) Same information and format but freight, not passengers*/
+
+
+ORIGIN_CITY_NAME	ORIGIN_STATE_NM	AIRPORT_CODE	AIRLINE_NAME	FREIGHT
+Colorado Springs, CO	Colorado	COS	Alaska Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	APA	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Peninsula Airways Inc.	0.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Pueblo, CO	Colorado	PUB	Great Lakes Airlines	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Virgin America	0.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Eagle, CO	Colorado	EGE	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Denver, CO	Colorado	DEN	Ameristar Air Cargo	0.00
+Colorado Springs, CO	Colorado	COS	Allegiant Air	0.00
+Aspen, CO	Colorado	ASE	Avjet Corporation	0.00
+Eagle, CO	Colorado	EGE	Avjet Corporation	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Delta Air Lines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	32.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	70.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Miami Air International	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	10064.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Southwest Airlines Co.	2628.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	151.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	167.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	120.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Colorado Springs, CO	Colorado	COS	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	APA	Jet Aviation Flight Services, Inc.	0.00
+Denver, CO	Colorado	APA	Jet Aviation Flight Services, Inc.	0.00
+Denver, CO	Colorado	APA	Jet Aviation Flight Services, Inc.	0.00
+Denver, CO	Colorado	DEN	Omni Air International LLC	0.00
+Denver, CO	Colorado	DEN	Swift Air, LLC	0.00
+Denver, CO	Colorado	DEN	Swift Air, LLC	0.00
+Denver, CO	Colorado	DEN	Swift Air, LLC	0.00
+Grand Junction, CO	Colorado	GJT	Swift Air, LLC	0.00
+Denver, CO	Colorado	DEN	Kalitta Charters II	8878.00
+Denver, CO	Colorado	DEN	CFM Inc d/b/a Contour Airlines	0.00
+Denver, CO	Colorado	DEN	Sun Country Airlines d/b/a MN Airlines	0.00
+Fort Collins/Loveland, CO	Colorado	FNL	Sun Country Airlines d/b/a MN Airlines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Sun Country Airlines d/b/a MN Airlines	0.00
+Pueblo, CO	Colorado	PUB	Sun Country Airlines d/b/a MN Airlines	0.00
+Denver, CO	Colorado	DEN	Southern Air Inc.	431309.00
+Pueblo, CO	Colorado	PUB	USA Jet Airlines Inc.	270.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Durango, CO	Colorado	DRO	Trans States Airlines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Envoy Air	1.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Colorado Springs, CO	Colorado	COS	ExpressJet Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	ExpressJet Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	18239.00
+Denver, CO	Colorado	DEN	United Parcel Service	32891.00
+Denver, CO	Colorado	DEN	United Parcel Service	25727.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Grand Junction, CO	Colorado	GJT	Allegiant Air	0.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	450.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	428.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	550.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	55.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	865.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	181.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	10.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	703.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	55.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	77.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	11.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	944.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	110.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	96.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	377.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	760.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	26.00
+Colorado Springs, CO	Colorado	COS	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	16753.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	14986.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	50142.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	23383.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	47075.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	42470.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	42190.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Mesa Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Endeavor Air Inc.	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	33216.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	188.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	70.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1391.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	46.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	33.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	104.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	114.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	173.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	190.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	59.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1128.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	431.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	208.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	565.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	39954.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	67964.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Montrose/Delta, CO	Colorado	MTJ	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	472.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	568.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	451.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	368.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	318.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	137.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	107.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	40.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2230.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	95.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1828.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	18.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	326.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	559.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Envoy Air	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	153735.00
+Denver, CO	Colorado	DEN	United Parcel Service	243523.00
+Denver, CO	Colorado	DEN	United Parcel Service	173084.00
+Grand Junction, CO	Colorado	GJT	Compass Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	575.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	125.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	111.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	104.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	276.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	119.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	209.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1272.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	593.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	24.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3711.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	505.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	36.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	387.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	509.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Sun Country Airlines d/b/a MN Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	62.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	24.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	90.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	31037.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	136.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	42.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	155.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	128.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1845.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1226.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Montrose/Delta, CO	Colorado	MTJ	GoJet Airlines LLC d/b/a United Express	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	86.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	391.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	8.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	889.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	497.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Colorado Springs, CO	Colorado	COS	Federal Express Corporation	125368.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	367675.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	460413.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	66319.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	433940.00
+Grand Junction, CO	Colorado	GJT	Allegiant Air	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	314.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	495.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	89.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	694.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	34.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	57.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	608.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2692.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1096.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3608.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Gunnison, CO	Colorado	GUC	Trans States Airlines	0.00
+Hayden, CO	Colorado	HDN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	24.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	500.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1089.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	47.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	62.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	24.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4189.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	55.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1918.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	817.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1092.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1610.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1273.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2813.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	147267.00
+Colorado Springs, CO	Colorado	COS	Allegiant Air	0.00
+Colorado Springs, CO	Colorado	COS	Allegiant Air	0.00
+Grand Junction, CO	Colorado	GJT	Allegiant Air	0.00
+Denver, CO	Colorado	DEN	Via Airlines d/b/a Charter Air Transport	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	404.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	81.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	882.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	8211.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Telluride, CO	Colorado	TEX	Great Lakes Airlines	0.00
+Cortez, CO	Colorado	CEZ	Boutique Air	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	509.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1925.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	56.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	131.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3391.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	321.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1259.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2736.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	247774.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	1607.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	147.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	384.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	763.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	351.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1621.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2751.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3504.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	186.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	79.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2576.00
+Denver, CO	Colorado	DEN	JetBlue Airways	0.00
+Denver, CO	Colorado	DEN	Allegiant Air	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	719.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4017.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	187.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	243.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	357.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	285.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	56.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	111.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Colorado Springs, CO	Colorado	COS	Horizon Air	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	70.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	1163906.00
+Cortez, CO	Colorado	CEZ	Boutique Air	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	316.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	317135.00
+Grand Junction, CO	Colorado	GJT	Federal Express Corporation	321148.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	285.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	466.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	503.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	113.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	287.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3577.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	1175210.00
+Denver, CO	Colorado	DEN	United Parcel Service	856546.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1405.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2694.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	517.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	303.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	361.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	190.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2929.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1156.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2500.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1529.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	324.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	575.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	837.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	262.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	684.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	17245.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	620058.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	822.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	164.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	12.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	370.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1076.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	64.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	918.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	311.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1695.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	14047.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	182.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1835.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	211.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2737.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	559.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	623.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	235.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6073.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6063.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3689.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6210.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	552896.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Hayden, CO	Colorado	HDN	GoJet Airlines LLC d/b/a United Express	0.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	118.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1536.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	262.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	70.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	17922.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	21316.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1479.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Federal Express Corporation	576847.00
+Hayden, CO	Colorado	HDN	Federal Express Corporation	11749.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Montrose/Delta, CO	Colorado	MTJ	ExpressJet Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3280.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	507.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3097.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	745.00
+Colorado Springs, CO	Colorado	COS	ExpressJet Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	1.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	27.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	610.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4871.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	493.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	388.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1252.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5028.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5719.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3203.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2093.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3285.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3913.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	384.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Trans States Airlines	0.00
+Alamosa, CO	Colorado	ALS	Boutique Air	0.00
+Cortez, CO	Colorado	CEZ	Boutique Air	0.00
+Durango, CO	Colorado	DRO	Empire Airlines Inc.	40799.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	92.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5171.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1221.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Durango, CO	Colorado	DRO	Federal Express Corporation	40799.00
+Denver, CO	Colorado	DEN	Sun Country Airlines d/b/a MN Airlines	122.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2034.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3289.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2449.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	542.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7042.00
+Colorado Springs, CO	Colorado	COS	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	2198850.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Colorado Springs, CO	Colorado	COS	ExpressJet Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	569.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	466.00
+Eagle, CO	Colorado	EGE	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	922.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	480.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	951.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Mesa Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	1673.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	195.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	201.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3997.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1502.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	175205.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1307.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	54130.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1841.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3713.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Montrose/Delta, CO	Colorado	MTJ	Mesa Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	923.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Delta Air Lines Inc.	4997.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Eagle, CO	Colorado	EGE	GoJet Airlines LLC d/b/a United Express	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	64061.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7094.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7290.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	0.00
+Colorado Springs, CO	Colorado	COS	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	United Parcel Service	1946318.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	14.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	186.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	242.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2019.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3239.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	1599.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	214.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2890.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5419.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5345.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	JetBlue Airways	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	1325.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	1286.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	320.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9985.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6857.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	4926.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3690.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2474.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5383.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7416.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Federal Express Corporation	2576162.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	2003.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3509.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	20632.00
+Colorado Springs, CO	Colorado	COS	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	3415.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5066.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	189.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	854.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	758.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13681.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4064.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	3250.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	4141.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7039.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5181.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9331.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7185.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3569.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	441.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	92.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	620.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3087.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2812.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2061.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	1083.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2266.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1511.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1178.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	7872.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6124.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5090.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	18225.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	15937.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	9437.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	169.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4324.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	27946.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	7102.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	10665.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	2608.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	729.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Cortez, CO	Colorado	CEZ	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2650.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	7890.00
+Denver, CO	Colorado	DEN	Republic Airlines	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3000.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10330.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	2684.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	9093.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Montrose/Delta, CO	Colorado	MTJ	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	991.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5161.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2767.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	21072.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	19984.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6138.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	468.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	26489.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10150.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	574.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4198.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	11838.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12709.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	JetBlue Airways	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	2772.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6867.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Spirit Air Lines	0.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	2826.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Durango, CO	Colorado	DRO	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	821.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	425.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10426.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	47936.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	5354.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	24015.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4010.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3928.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	21837.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4411.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10688.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	12356.00
+Denver, CO	Colorado	DEN	Trans States Airlines	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	35520.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12305.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	39030.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	55543.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	24442.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	440.00
+Denver, CO	Colorado	DEN	Boutique Air	0.00
+Alamosa, CO	Colorado	ALS	Boutique Air	0.00
+Denver, CO	Colorado	DEN	Great Lakes Airlines	0.00
+Pueblo, CO	Colorado	PUB	Great Lakes Airlines	0.00
+Denver, CO	Colorado	DEN	Alaska Airlines Inc.	3157.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	4464.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	1578.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	3603.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	6730.00
+Denver, CO	Colorado	DEN	Frontier Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	15791.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	1395.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4577.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	455.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5786.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	5342.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	19869.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	13174.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	10507.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	25831.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	16135.00
+Grand Junction, CO	Colorado	GJT	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6941.00
+Denver, CO	Colorado	DEN	Virgin America	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	23828.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	1318.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	43786.00
+Durango, CO	Colorado	DRO	Mesa Airlines Inc.	1560.00
+Grand Junction, CO	Colorado	GJT	Envoy Air	639.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	888.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	18634.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	50293.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	12117.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	2803.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	8100.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	8150.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	6591.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Durango, CO	Colorado	DRO	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	GoJet Airlines LLC d/b/a United Express	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	15210.00
+Colorado Springs, CO	Colorado	COS	American Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	28560.00
+Colorado Springs, CO	Colorado	COS	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	33389.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	4682.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	9744.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	92042.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	29343.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	14547.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	28347.00
+Denver, CO	Colorado	DEN	Delta Air Lines Inc.	8777.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	35007.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	12202.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	55050.00
+Aspen, CO	Colorado	ASE	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	SkyWest Airlines Inc.	0.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	4059.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	22029.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	39128.00
+Denver, CO	Colorado	DEN	American Airlines Inc.	6733.00
+Denver, CO	Colorado	DEN	United Air Lines Inc.	66501.00
+Denver, CO	Colorado	DEN	Southwest Airlines Co.	28035.00
+
+
+/*3) How many passengers arrived in Colorado from outside Colorado? Display the following information in
+this format:
+Origin city name & state, destination city in colorado, airline name*/
+
+ORIGIN_CITY_NAME	ORIGIN_STATE_NM	DEST_CITY_NAME	AIRLINE_NAME	PASSENGERS
+Seattle, WA	Washington	Colorado Springs, CO	Alaska Airlines Inc.	156.00
+Scottsbluff, NE	Nebraska	Denver, CO	Trans States Airlines	49.00
+Scottsbluff, NE	Nebraska	Denver, CO	Peninsula Airways Inc.	329.00
+Dodge City, KS	Kansas	Denver, CO	Peninsula Airways Inc.	116.00
+Kearney, NE	Nebraska	Denver, CO	Peninsula Airways Inc.	600.00
+North Platte, NE	Nebraska	Denver, CO	Peninsula Airways Inc.	422.00
+Liberal, KS	Kansas	Denver, CO	Peninsula Airways Inc.	5.00
+Liberal, KS	Kansas	Denver, CO	Peninsula Airways Inc.	153.00
+San Francisco, CA	California	Denver, CO	Virgin America	119.00
+Des Moines, IA	Iowa	Denver, CO	Tradewind Aviation	2.00
+Dickinson, ND	North Dakota	Denver, CO	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	35.00
+St. Louis, MO	Missouri	Eagle, CO	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	38.00
+CONCORD, NC	North Carolina	Eagle, CO	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	0.00
+Atlanta, GA	Georgia	Denver, CO	Ameristar Air Cargo	0.00
+Las Vegas, NV	Nevada	Colorado Springs, CO	Allegiant Air	0.00
+Burbank, CA	California	Eagle, CO	Avjet Corporation	4.00
+Salt Lake City, UT	Utah	Aspen, CO	Avjet Corporation	2.00
+Philadelphia, PA	Pennsylvania	Denver, CO	American Airlines Inc.	56.00
+Atlanta, GA	Georgia	Colorado Springs, CO	Delta Air Lines Inc.	160.00
+Atlanta, GA	Georgia	Denver, CO	Delta Air Lines Inc.	30.00
+Atlanta, GA	Georgia	Denver, CO	Delta Air Lines Inc.	150.00
+Casper, WY	Wyoming	Denver, CO	Delta Air Lines Inc.	103.00
+Detroit, MI	Michigan	Denver, CO	Delta Air Lines Inc.	147.00
+Minneapolis, MN	Minnesota	Denver, CO	Delta Air Lines Inc.	160.00
+Oklahoma City, OK	Oklahoma	Denver, CO	Delta Air Lines Inc.	156.00
+San Francisco, CA	California	Denver, CO	Delta Air Lines Inc.	61.00
+Salt Lake City, UT	Utah	Denver, CO	Delta Air Lines Inc.	52.00
+Hartford, CT	Connecticut	Denver, CO	Miami Air International	0.00
+Oakland, CA	California	Colorado Springs, CO	Miami Air International	27.00
+Scottsbluff, NE	Nebraska	Denver, CO	United Air Lines Inc.	126.00
+Kansas City, MO	Missouri	Denver, CO	United Air Lines Inc.	58.00
+Cheyenne, WY	Wyoming	Denver, CO	Southwest Airlines Co.	278.00
+Cheyenne, WY	Wyoming	Denver, CO	Southwest Airlines Co.	175.00
+Dallas, TX	Texas	Colorado Springs, CO	Southwest Airlines Co.	141.00
+San Jose, CA	California	Colorado Springs, CO	Southwest Airlines Co.	140.00
+Austin, TX	Texas	Denver, CO	Jet Aviation Flight Services, Inc.	1.00
+Columbus, OH	Ohio	Denver, CO	Jet Aviation Flight Services, Inc.	0.00
+Sugar Land, TX	Texas	Aspen, CO	Jet Aviation Flight Services, Inc.	6.00
+Phoenix, AZ	Arizona	Denver, CO	Swift Air, LLC	30.00
+Brownsville, TX	Texas	Denver, CO	Swift Air, LLC	15.00
+Wendover, UT	Utah	Grand Junction, CO	Swift Air, LLC	138.00
+Rochester, NY	New York	Denver, CO	Swift Air, LLC	0.00
+Tulsa, OK	Oklahoma	Denver, CO	Swift Air, LLC	20.00
+Chicago, IL	Illinois	Denver, CO	Kalitta Charters II	0.00
+Reno, NV	Nevada	Denver, CO	CFM Inc d/b/a Contour Airlines	13.00
+Bullhead City, AZ	Arizona	Denver, CO	Sun Country Airlines d/b/a MN Airlines	129.00
+Bullhead City, AZ	Arizona	Fort Collins/Loveland, CO	Sun Country Airlines d/b/a MN Airlines	148.00
+Bullhead City, AZ	Arizona	Montrose/Delta, CO	Sun Country Airlines d/b/a MN Airlines	93.00
+Bullhead City, AZ	Arizona	Pueblo, CO	Sun Country Airlines d/b/a MN Airlines	156.00
+Cincinnati, OH	Kentucky	Denver, CO	Southern Air Inc.	0.00
+Gadsden, AL	Alabama	Pueblo, CO	USA Jet Airlines Inc.	0.00
+Long Beach, CA	California	Denver, CO	JetBlue Airways	146.00
+Grand Rapids, MI	Michigan	Denver, CO	Trans States Airlines	43.00
+Dallas/Fort Worth, TX	Texas	Montrose/Delta, CO	Envoy Air	44.00
+Salina, KS	Kansas	Denver, CO	Great Lakes Airlines	94.00
+Houston, TX	Texas	Denver, CO	ExpressJet Airlines Inc.	47.00
+Houston, TX	Texas	Gunnison, CO	ExpressJet Airlines Inc.	49.00
+Salt Lake City, UT	Utah	Denver, CO	United Parcel Service	0.00
+Salt Lake City, UT	Utah	Denver, CO	United Parcel Service	0.00
+Scottsbluff, NE	Nebraska	Denver, CO	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	20.00
+Williston, ND	North Dakota	Denver, CO	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	121.00
+Las Vegas, NV	Nevada	Grand Junction, CO	Allegiant Air	151.00
+Orlando, FL	Florida	Denver, CO	American Airlines Inc.	154.00
+Chicago, IL	Illinois	Colorado Springs, CO	American Airlines Inc.	150.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	American Airlines Inc.	142.00
+San Francisco, CA	California	Denver, CO	American Airlines Inc.	150.00
+Salt Lake City, UT	Utah	Colorado Springs, CO	American Airlines Inc.	133.00
+Detroit, MI	Michigan	Denver, CO	Delta Air Lines Inc.	154.00
+Minneapolis, MN	Minnesota	Denver, CO	Delta Air Lines Inc.	106.00
+Minneapolis, MN	Minnesota	Denver, CO	Delta Air Lines Inc.	160.00
+Grand Rapids, MI	Michigan	Denver, CO	GoJet Airlines LLC d/b/a United Express	55.00
+Cody, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	35.00
+Casper, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	48.00
+Washington, DC	Virginia	Colorado Springs, CO	SkyWest Airlines Inc.	0.00
+Dallas/Fort Worth, TX	Texas	Colorado Springs, CO	SkyWest Airlines Inc.	0.00
+Houston, TX	Texas	Denver, CO	SkyWest Airlines Inc.	0.00
+Jackson, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	34.00
+Laramie, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	53.00
+Los Angeles, CA	California	Denver, CO	SkyWest Airlines Inc.	0.00
+Little Rock, AR	Arkansas	Denver, CO	SkyWest Airlines Inc.	62.00
+Medford, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	16.00
+Missoula, MT	Montana	Colorado Springs, CO	SkyWest Airlines Inc.	0.00
+Chicago, IL	Illinois	Denver, CO	SkyWest Airlines Inc.	0.00
+Portland, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	76.00
+Pasco/Kennewick/Richland, WA	Washington	Grand Junction, CO	SkyWest Airlines Inc.	41.00
+San Diego, CA	California	Denver, CO	SkyWest Airlines Inc.	69.00
+San Antonio, TX	Texas	Denver, CO	SkyWest Airlines Inc.	65.00
+St. George, UT	Utah	Colorado Springs, CO	SkyWest Airlines Inc.	45.00
+Sacramento, CA	California	Denver, CO	SkyWest Airlines Inc.	68.00
+Santa Ana, CA	California	Denver, CO	SkyWest Airlines Inc.	67.00
+Albuquerque, NM	New Mexico	Denver, CO	United Air Lines Inc.	140.00
+Hartford, CT	Connecticut	Denver, CO	United Air Lines Inc.	151.00
+Boston, MA	Massachusetts	Denver, CO	United Air Lines Inc.	127.00
+Bozeman, MT	Montana	Denver, CO	United Air Lines Inc.	84.00
+Washington, DC	Virginia	Denver, CO	United Air Lines Inc.	173.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	161.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	207.00
+Kansas City, MO	Missouri	Denver, CO	United Air Lines Inc.	107.00
+Orlando, FL	Florida	Denver, CO	United Air Lines Inc.	166.00
+Palm Springs, CA	California	Denver, CO	United Air Lines Inc.	164.00
+Palm Springs, CA	California	Denver, CO	United Air Lines Inc.	97.00
+Richmond, VA	Virginia	Denver, CO	United Air Lines Inc.	138.00
+Reno, NV	Nevada	Denver, CO	United Air Lines Inc.	38.00
+San Antonio, TX	Texas	Denver, CO	United Air Lines Inc.	128.00
+Santa Barbara, CA	California	Denver, CO	United Air Lines Inc.	109.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	129.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	385.00
+Santa Ana, CA	California	Denver, CO	United Air Lines Inc.	159.00
+St. Louis, MO	Missouri	Denver, CO	United Air Lines Inc.	157.00
+St. Louis, MO	Missouri	Denver, CO	United Air Lines Inc.	125.00
+Tulsa, OK	Oklahoma	Denver, CO	United Air Lines Inc.	123.00
+Charleston, SC	South Carolina	Denver, CO	Southwest Airlines Co.	107.00
+Cleveland, OH	Ohio	Denver, CO	Southwest Airlines Co.	139.00
+Detroit, MI	Michigan	Denver, CO	Southwest Airlines Co.	123.00
+Grand Rapids, MI	Michigan	Denver, CO	Southwest Airlines Co.	84.00
+New Orleans, LA	Louisiana	Denver, CO	Southwest Airlines Co.	175.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	Southwest Airlines Co.	143.00
+Reno, NV	Nevada	Denver, CO	Southwest Airlines Co.	140.00
+Fort Myers, FL	Florida	Denver, CO	Southwest Airlines Co.	171.00
+Sacramento, CA	California	Denver, CO	Southwest Airlines Co.	140.00
+Atlanta, GA	Georgia	Denver, CO	Republic Airlines	61.00
+Wichita, KS	Kansas	Denver, CO	Republic Airlines	52.00
+Louisville, KY	Kentucky	Denver, CO	Republic Airlines	67.00
+Tulsa, OK	Oklahoma	Denver, CO	Republic Airlines	52.00
+Cincinnati, OH	Kentucky	Denver, CO	Frontier Airlines Inc.	134.00
+Detroit, MI	Michigan	Denver, CO	Frontier Airlines Inc.	142.00
+Washington, DC	Virginia	Denver, CO	Frontier Airlines Inc.	132.00
+Houston, TX	Texas	Denver, CO	Frontier Airlines Inc.	171.00
+Indianapolis, IN	Indiana	Denver, CO	Frontier Airlines Inc.	150.00
+Orlando, FL	Florida	Denver, CO	Frontier Airlines Inc.	169.00
+Missoula, MT	Montana	Denver, CO	Frontier Airlines Inc.	102.00
+Chicago, IL	Illinois	Denver, CO	Frontier Airlines Inc.	180.00
+Phoenix, AZ	Arizona	Denver, CO	Frontier Airlines Inc.	142.00
+St. Louis, MO	Missouri	Denver, CO	Frontier Airlines Inc.	152.00
+Tampa, FL	Florida	Denver, CO	Frontier Airlines Inc.	4.00
+Knoxville, TN	Tennessee	Denver, CO	Frontier Airlines Inc.	140.00
+Indianapolis, IN	Indiana	Denver, CO	Federal Express Corporation	0.00
+Kansas City, MO	Missouri	Denver, CO	Federal Express Corporation	0.00
+Memphis, TN	Tennessee	Grand Junction, CO	Federal Express Corporation	0.00
+Oakland, CA	California	Denver, CO	Federal Express Corporation	0.00
+Houston, TX	Texas	Denver, CO	Spirit Air Lines	127.00
+Cincinnati, OH	Kentucky	Denver, CO	Endeavor Air Inc.	143.00
+Los Angeles, CA	California	Denver, CO	American Airlines Inc.	322.00
+Philadelphia, PA	Pennsylvania	Denver, CO	American Airlines Inc.	267.00
+Salt Lake City, UT	Utah	Denver, CO	Delta Air Lines Inc.	287.00
+Des Moines, IA	Iowa	Denver, CO	GoJet Airlines LLC d/b/a United Express	122.00
+Fresno, CA	California	Colorado Springs, CO	SkyWest Airlines Inc.	0.00
+Great Falls, MT	Montana	Denver, CO	SkyWest Airlines Inc.	65.00
+Chicago, IL	Illinois	Grand Junction, CO	SkyWest Airlines Inc.	96.00
+San Diego, CA	California	Denver, CO	SkyWest Airlines Inc.	145.00
+Fayetteville, AR	Arkansas	Denver, CO	SkyWest Airlines Inc.	108.00
+Atlanta, GA	Georgia	Denver, CO	United Air Lines Inc.	223.00
+Cincinnati, OH	Kentucky	Denver, CO	United Air Lines Inc.	112.00
+Washington, DC	Virginia	Denver, CO	United Air Lines Inc.	314.00
+Eugene, OR	Oregon	Denver, CO	United Air Lines Inc.	273.00
+Newark, NJ	New Jersey	Denver, CO	United Air Lines Inc.	211.00
+Spokane, WA	Washington	Denver, CO	United Air Lines Inc.	255.00
+Grand Rapids, MI	Michigan	Denver, CO	United Air Lines Inc.	220.00
+Wichita, KS	Kansas	Denver, CO	United Air Lines Inc.	149.00
+Las Vegas, NV	Nevada	Denver, CO	United Air Lines Inc.	166.00
+Tampa, FL	Florida	Denver, CO	United Air Lines Inc.	243.00
+Tucson, AZ	Arizona	Denver, CO	United Air Lines Inc.	228.00
+Boise, ID	Idaho	Denver, CO	Southwest Airlines Co.	217.00
+Spokane, WA	Washington	Denver, CO	Southwest Airlines Co.	281.00
+Portland, OR	Oregon	Denver, CO	Southwest Airlines Co.	274.00
+San Diego, CA	California	Denver, CO	Southwest Airlines Co.	275.00
+Seattle, WA	Washington	Denver, CO	Southwest Airlines Co.	256.00
+San Jose, CA	California	Denver, CO	Southwest Airlines Co.	236.00
+Columbus, OH	Ohio	Denver, CO	Republic Airlines	104.00
+Oklahoma City, OK	Oklahoma	Denver, CO	Republic Airlines	137.00
+Madison, WI	Wisconsin	Denver, CO	Frontier Airlines Inc.	242.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	Frontier Airlines Inc.	289.00
+San Antonio, TX	Texas	Denver, CO	Frontier Airlines Inc.	299.00
+Billings, MT	Montana	Denver, CO	Trans States Airlines	126.00
+Kansas City, MO	Missouri	Denver, CO	Trans States Airlines	143.00
+Shreveport, LA	Louisiana	Denver, CO	Trans States Airlines	92.00
+Tucson, AZ	Arizona	Denver, CO	Trans States Airlines	139.00
+Chicago, IL	Illinois	Colorado Springs, CO	ExpressJet Airlines Inc.	142.00
+Ontario, CA	California	Denver, CO	United Parcel Service	0.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	American Airlines Inc.	396.00
+Bozeman, MT	Montana	Denver, CO	GoJet Airlines LLC d/b/a United Express	177.00
+Moline, IL	Illinois	Denver, CO	GoJet Airlines LLC d/b/a United Express	166.00
+Louisville, KY	Kentucky	Denver, CO	GoJet Airlines LLC d/b/a United Express	199.00
+Albuquerque, NM	New Mexico	Denver, CO	SkyWest Airlines Inc.	166.00
+Amarillo, TX	Texas	Denver, CO	SkyWest Airlines Inc.	143.00
+Bozeman, MT	Montana	Denver, CO	SkyWest Airlines Inc.	136.00
+Des Moines, IA	Iowa	Denver, CO	SkyWest Airlines Inc.	147.00
+Los Angeles, CA	California	Grand Junction, CO	SkyWest Airlines Inc.	89.00
+Lubbock, TX	Texas	Denver, CO	SkyWest Airlines Inc.	90.00
+Ontario, CA	California	Denver, CO	SkyWest Airlines Inc.	147.00
+Phoenix, AZ	Arizona	Denver, CO	SkyWest Airlines Inc.	204.00
+Rapid City, SD	South Dakota	Denver, CO	SkyWest Airlines Inc.	107.00
+Burbank, CA	California	Denver, CO	United Air Lines Inc.	333.00
+Baltimore, MD	Maryland	Denver, CO	United Air Lines Inc.	368.00
+Charlotte, NC	North Carolina	Denver, CO	United Air Lines Inc.	446.00
+Oklahoma City, OK	Oklahoma	Denver, CO	United Air Lines Inc.	471.00
+Chicago, IL	Illinois	Denver, CO	United Air Lines Inc.	346.00
+Palm Springs, CA	California	Denver, CO	United Air Lines Inc.	379.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	United Air Lines Inc.	482.00
+Albuquerque, NM	New Mexico	Denver, CO	Southwest Airlines Co.	336.00
+Albany, NY	New York	Denver, CO	Southwest Airlines Co.	465.00
+Atlanta, GA	Georgia	Denver, CO	Southwest Airlines Co.	412.00
+Hartford, CT	Connecticut	Denver, CO	Southwest Airlines Co.	394.00
+Indianapolis, IN	Indiana	Denver, CO	Southwest Airlines Co.	395.00
+Long Beach, CA	California	Denver, CO	Southwest Airlines Co.	380.00
+New Orleans, LA	Louisiana	Denver, CO	Southwest Airlines Co.	427.00
+Omaha, NE	Nebraska	Denver, CO	Southwest Airlines Co.	311.00
+Ontario, CA	California	Denver, CO	Southwest Airlines Co.	400.00
+Norfolk, VA	Virginia	Denver, CO	Southwest Airlines Co.	508.00
+Albuquerque, NM	New Mexico	Denver, CO	Republic Airlines	203.00
+Birmingham, AL	Alabama	Denver, CO	Republic Airlines	144.00
+Cleveland, OH	Ohio	Denver, CO	Republic Airlines	200.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	Republic Airlines	198.00
+Des Moines, IA	Iowa	Denver, CO	Republic Airlines	196.00
+Memphis, TN	Tennessee	Denver, CO	Republic Airlines	200.00
+Minneapolis, MN	Minnesota	Denver, CO	Republic Airlines	198.00
+New Orleans, LA	Louisiana	Denver, CO	Republic Airlines	197.00
+Omaha, NE	Nebraska	Denver, CO	Republic Airlines	206.00
+San Antonio, TX	Texas	Denver, CO	Republic Airlines	192.00
+Fayetteville, AR	Arkansas	Denver, CO	Republic Airlines	130.00
+Cedar Rapids/Iowa City, IA	Iowa	Denver, CO	Frontier Airlines Inc.	425.00
+Indianapolis, IN	Indiana	Denver, CO	Frontier Airlines Inc.	517.00
+Minneapolis, MN	Minnesota	Denver, CO	Frontier Airlines Inc.	381.00
+Wichita, KS	Kansas	Denver, CO	Trans States Airlines	158.00
+Chicago, IL	Illinois	Montrose/Delta, CO	Envoy Air	211.00
+Salt Lake City, UT	Utah	Denver, CO	United Parcel Service	0.00
+Los Angeles, CA	California	Grand Junction, CO	Compass Airlines	169.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	American Airlines Inc.	541.00
+Albuquerque, NM	New Mexico	Denver, CO	GoJet Airlines LLC d/b/a United Express	210.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	GoJet Airlines LLC d/b/a United Express	274.00
+Spokane, WA	Washington	Denver, CO	SkyWest Airlines Inc.	187.00
+Los Angeles, CA	California	Durango, CO	SkyWest Airlines Inc.	160.00
+Kansas City, MO	Missouri	Denver, CO	SkyWest Airlines Inc.	191.00
+Missoula, MT	Montana	Denver, CO	SkyWest Airlines Inc.	168.00
+Minneapolis, MN	Minnesota	Denver, CO	SkyWest Airlines Inc.	293.00
+Omaha, NE	Nebraska	Denver, CO	SkyWest Airlines Inc.	144.00
+Springfield, MO	Missouri	Denver, CO	SkyWest Airlines Inc.	253.00
+Atlanta, GA	Georgia	Denver, CO	United Air Lines Inc.	462.00
+Bozeman, MT	Montana	Denver, CO	United Air Lines Inc.	509.00
+Cedar Rapids/Iowa City, IA	Iowa	Denver, CO	United Air Lines Inc.	395.00
+Columbus, OH	Ohio	Denver, CO	United Air Lines Inc.	577.00
+Columbus, OH	Ohio	Denver, CO	United Air Lines Inc.	540.00
+Cincinnati, OH	Kentucky	Denver, CO	United Air Lines Inc.	438.00
+Detroit, MI	Michigan	Denver, CO	United Air Lines Inc.	684.00
+Kalispell, MT	Montana	Denver, CO	United Air Lines Inc.	397.00
+Lihue, HI	Hawaii	Denver, CO	United Air Lines Inc.	642.00
+Madison, WI	Wisconsin	Denver, CO	United Air Lines Inc.	617.00
+Reno, NV	Nevada	Denver, CO	United Air Lines Inc.	650.00
+Albuquerque, NM	New Mexico	Denver, CO	Southwest Airlines Co.	660.00
+Charleston, SC	South Carolina	Denver, CO	Southwest Airlines Co.	624.00
+Milwaukee, WI	Wisconsin	Denver, CO	Southwest Airlines Co.	561.00
+Minneapolis, MN	Minnesota	Denver, CO	Southwest Airlines Co.	543.00
+Norfolk, VA	Virginia	Denver, CO	Southwest Airlines Co.	542.00
+San Antonio, TX	Texas	Denver, CO	Southwest Airlines Co.	649.00
+Salt Lake City, UT	Utah	Denver, CO	Southwest Airlines Co.	516.00
+Tucson, AZ	Arizona	Denver, CO	Southwest Airlines Co.	551.00
+El Paso, TX	Texas	Denver, CO	Republic Airlines	242.00
+Salt Lake City, UT	Utah	Denver, CO	Republic Airlines	208.00
+Milwaukee, WI	Wisconsin	Denver, CO	Frontier Airlines Inc.	577.00
+Santa Ana, CA	California	Denver, CO	Frontier Airlines Inc.	567.00
+Cheyenne, WY	Wyoming	Denver, CO	Great Lakes Airlines	14.00
+Indianapolis, IN	Indiana	Denver, CO	GoJet Airlines LLC d/b/a United Express	328.00
+Billings, MT	Montana	Denver, CO	SkyWest Airlines Inc.	163.00
+Kansas City, MO	Missouri	Denver, CO	SkyWest Airlines Inc.	335.00
+Memphis, TN	Tennessee	Denver, CO	SkyWest Airlines Inc.	357.00
+Palm Springs, CA	California	Denver, CO	SkyWest Airlines Inc.	124.00
+Salt Lake City, UT	Utah	Denver, CO	SkyWest Airlines Inc.	201.00
+Boise, ID	Idaho	Denver, CO	United Air Lines Inc.	738.00
+Charlotte, NC	North Carolina	Denver, CO	United Air Lines Inc.	852.00
+Fort Lauderdale, FL	Florida	Denver, CO	United Air Lines Inc.	823.00
+Spokane, WA	Washington	Denver, CO	United Air Lines Inc.	564.00
+Kansas City, MO	Missouri	Denver, CO	United Air Lines Inc.	697.00
+Oklahoma City, OK	Oklahoma	Denver, CO	United Air Lines Inc.	804.00
+Ontario, CA	California	Denver, CO	United Air Lines Inc.	656.00
+Portland, OR	Oregon	Denver, CO	United Air Lines Inc.	699.00
+Seattle, WA	Washington	Denver, CO	United Air Lines Inc.	605.00
+San Jose, CA	California	Denver, CO	United Air Lines Inc.	613.00
+Tucson, AZ	Arizona	Denver, CO	United Air Lines Inc.	619.00
+Nashville, TN	Tennessee	Denver, CO	Southwest Airlines Co.	619.00
+Houston, TX	Texas	Denver, CO	Southwest Airlines Co.	686.00
+Long Beach, CA	California	Denver, CO	Southwest Airlines Co.	673.00
+Oklahoma City, OK	Oklahoma	Denver, CO	Southwest Airlines Co.	715.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	Southwest Airlines Co.	821.00
+St. Louis, MO	Missouri	Denver, CO	Southwest Airlines Co.	700.00
+St. Louis, MO	Missouri	Denver, CO	Republic Airlines	331.00
+Phoenix, AZ	Arizona	Denver, CO	Frontier Airlines Inc.	1091.00
+Minneapolis, MN	Minnesota	Denver, CO	Sun Country Airlines d/b/a MN Airlines	653.00
+Minneapolis, MN	Minnesota	Denver, CO	GoJet Airlines LLC d/b/a United Express	390.00
+Chicago, IL	Illinois	Montrose/Delta, CO	GoJet Airlines LLC d/b/a United Express	332.00
+Atlanta, GA	Georgia	Denver, CO	SkyWest Airlines Inc.	382.00
+Cleveland, OH	Ohio	Denver, CO	SkyWest Airlines Inc.	421.00
+Des Moines, IA	Iowa	Denver, CO	SkyWest Airlines Inc.	330.00
+Kalispell, MT	Montana	Denver, CO	SkyWest Airlines Inc.	329.00
+Wichita, KS	Kansas	Denver, CO	SkyWest Airlines Inc.	384.00
+Memphis, TN	Tennessee	Denver, CO	SkyWest Airlines Inc.	392.00
+Minot, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	325.00
+North Bend/Coos Bay, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	222.00
+Bend/Redmond, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	300.00
+Santa Barbara, CA	California	Denver, CO	SkyWest Airlines Inc.	248.00
+Tulsa, OK	Oklahoma	Denver, CO	SkyWest Airlines Inc.	382.00
+Tucson, AZ	Arizona	Denver, CO	SkyWest Airlines Inc.	375.00
+Austin, TX	Texas	Denver, CO	United Air Lines Inc.	937.00
+Newark, NJ	New Jersey	Denver, CO	United Air Lines Inc.	2053.00
+Indianapolis, IN	Indiana	Denver, CO	United Air Lines Inc.	954.00
+Indianapolis, IN	Indiana	Denver, CO	United Air Lines Inc.	755.00
+Medford, OR	Oregon	Denver, CO	United Air Lines Inc.	755.00
+Milwaukee, WI	Wisconsin	Denver, CO	United Air Lines Inc.	817.00
+Philadelphia, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	761.00
+Jacksonville, FL	Florida	Denver, CO	Southwest Airlines Co.	915.00
+San Francisco, CA	California	Denver, CO	Southwest Airlines Co.	885.00
+Salt Lake City, UT	Utah	Denver, CO	Southwest Airlines Co.	1002.00
+Atlanta, GA	Georgia	Denver, CO	Republic Airlines	398.00
+Memphis, TN	Tennessee	Denver, CO	Federal Express Corporation	0.00
+Cedar Rapids/Iowa City, IA	Iowa	Denver, CO	Trans States Airlines	290.00
+Sioux Falls, SD	South Dakota	Denver, CO	Trans States Airlines	294.00
+Louisville, KY	Kentucky	Denver, CO	United Parcel Service	0.00
+Las Vegas, NV	Nevada	Grand Junction, CO	Allegiant Air	858.00
+Knoxville, TN	Tennessee	Denver, CO	GoJet Airlines LLC d/b/a United Express	450.00
+Austin, TX	Texas	Denver, CO	SkyWest Airlines Inc.	419.00
+Bakersfield, CA	California	Denver, CO	SkyWest Airlines Inc.	448.00
+Charlotte, NC	North Carolina	Denver, CO	SkyWest Airlines Inc.	503.00
+Richmond, VA	Virginia	Denver, CO	SkyWest Airlines Inc.	480.00
+Billings, MT	Montana	Denver, CO	United Air Lines Inc.	843.00
+Boise, ID	Idaho	Denver, CO	United Air Lines Inc.	877.00
+Burbank, CA	California	Denver, CO	United Air Lines Inc.	630.00
+Des Moines, IA	Iowa	Denver, CO	United Air Lines Inc.	1034.00
+Eugene, OR	Oregon	Denver, CO	United Air Lines Inc.	938.00
+Kansas City, MO	Missouri	Denver, CO	United Air Lines Inc.	895.00
+Milwaukee, WI	Wisconsin	Denver, CO	United Air Lines Inc.	1158.00
+Philadelphia, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	1054.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	807.00
+Tulsa, OK	Oklahoma	Denver, CO	United Air Lines Inc.	844.00
+Austin, TX	Texas	Denver, CO	Southwest Airlines Co.	953.00
+Cleveland, OH	Ohio	Denver, CO	Southwest Airlines Co.	1150.00
+Pensacola, FL	Florida	Denver, CO	Southwest Airlines Co.	959.00
+Tulsa, OK	Oklahoma	Denver, CO	Southwest Airlines Co.	928.00
+Phoenix, AZ	Arizona	Denver, CO	American Airlines Inc.	1007.00
+Cincinnati, OH	Kentucky	Denver, CO	SkyWest Airlines Inc.	530.00
+Oklahoma City, OK	Oklahoma	Denver, CO	SkyWest Airlines Inc.	464.00
+Austin, TX	Texas	Denver, CO	United Air Lines Inc.	972.00
+Eugene, OR	Oregon	Denver, CO	United Air Lines Inc.	812.00
+New Orleans, LA	Louisiana	Denver, CO	United Air Lines Inc.	1170.00
+Salt Lake City, UT	Utah	Denver, CO	United Air Lines Inc.	1232.00
+Las Vegas, NV	Nevada	Denver, CO	Southwest Airlines Co.	1048.00
+Kansas City, MO	Missouri	Denver, CO	Southwest Airlines Co.	1056.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	Southwest Airlines Co.	1313.00
+Nashville, TN	Tennessee	Denver, CO	Republic Airlines	525.00
+San Francisco, CA	California	Colorado Springs, CO	Frontier Airlines Inc.	905.00
+Louisville, KY	Kentucky	Denver, CO	United Parcel Service	0.00
+Phoenix, AZ	Arizona	Colorado Springs, CO	Allegiant Air	1299.00
+Las Vegas, NV	Nevada	Colorado Springs, CO	Allegiant Air	1272.00
+Los Angeles, CA	California	Grand Junction, CO	Allegiant Air	1184.00
+Branson, MO	Missouri	Denver, CO	Via Airlines d/b/a Charter Air Transport	308.00
+Kalispell, MT	Montana	Denver, CO	SkyWest Airlines Inc.	570.00
+Medford, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	630.00
+Baltimore, MD	Maryland	Denver, CO	United Air Lines Inc.	1215.00
+Detroit, MI	Michigan	Denver, CO	United Air Lines Inc.	1185.00
+Eugene, OR	Oregon	Denver, CO	United Air Lines Inc.	1144.00
+Indianapolis, IN	Indiana	Denver, CO	United Air Lines Inc.	1259.00
+Madison, WI	Wisconsin	Denver, CO	United Air Lines Inc.	1183.00
+Indianapolis, IN	Indiana	Denver, CO	Southwest Airlines Co.	1501.00
+Minneapolis, MN	Minnesota	Denver, CO	Southwest Airlines Co.	1369.00
+San Antonio, TX	Texas	Denver, CO	Southwest Airlines Co.	1151.00
+Tulsa, OK	Oklahoma	Denver, CO	Trans States Airlines	422.00
+Phoenix, AZ	Arizona	Cortez, CO	Boutique Air	64.00
+Columbus, OH	Ohio	Denver, CO	SkyWest Airlines Inc.	724.00
+St. Louis, MO	Missouri	Denver, CO	SkyWest Airlines Inc.	486.00
+Hartford, CT	Connecticut	Denver, CO	United Air Lines Inc.	1341.00
+Des Moines, IA	Iowa	Denver, CO	United Air Lines Inc.	1261.00
+Washington, DC	Virginia	Denver, CO	United Air Lines Inc.	1472.00
+New Orleans, LA	Louisiana	Denver, CO	United Air Lines Inc.	1663.00
+Ontario, CA	California	Denver, CO	United Air Lines Inc.	1618.00
+Palm Springs, CA	California	Denver, CO	United Air Lines Inc.	916.00
+Oklahoma City, OK	Oklahoma	Denver, CO	Southwest Airlines Co.	1336.00
+Louisville, KY	Kentucky	Denver, CO	Southwest Airlines Co.	1329.00
+San Francisco, CA	California	Denver, CO	Southwest Airlines Co.	1366.00
+Houston, TX	Texas	Colorado Springs, CO	Republic Airlines	670.00
+Washington, DC	Virginia	Denver, CO	Frontier Airlines Inc.	1287.00
+Des Moines, IA	Iowa	Denver, CO	Frontier Airlines Inc.	1436.00
+Memphis, TN	Tennessee	Denver, CO	Federal Express Corporation	0.00
+Oklahoma City, OK	Oklahoma	Denver, CO	SkyWest Airlines Inc.	477.00
+Baltimore, MD	Maryland	Denver, CO	United Air Lines Inc.	1750.00
+Sioux Falls, SD	South Dakota	Denver, CO	United Air Lines Inc.	1216.00
+Los Angeles, CA	California	Denver, CO	Southwest Airlines Co.	1499.00
+Kansas City, MO	Missouri	Denver, CO	Southwest Airlines Co.	1838.00
+Phoenix, AZ	Arizona	Denver, CO	Southwest Airlines Co.	1517.00
+Los Angeles, CA	California	Colorado Springs, CO	Frontier Airlines Inc.	1401.00
+Springfield, MO	Missouri	Denver, CO	Trans States Airlines	520.00
+San Antonio, TX	Texas	Denver, CO	GoJet Airlines LLC d/b/a United Express	761.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	United Air Lines Inc.	1731.00
+Milwaukee, WI	Wisconsin	Denver, CO	United Air Lines Inc.	1873.00
+Minneapolis, MN	Minnesota	Denver, CO	United Air Lines Inc.	1577.00
+Sacramento, CA	California	Denver, CO	United Air Lines Inc.	1543.00
+Fresno, CA	California	Grand Junction, CO	Federal Express Corporation	0.00
+New York, NY	New York	Denver, CO	JetBlue Airways	1770.00
+Cincinnati, OH	Kentucky	Denver, CO	Allegiant Air	1874.00
+New York, NY	New York	Denver, CO	Delta Air Lines Inc.	1492.00
+Moline, IL	Illinois	Denver, CO	SkyWest Airlines Inc.	501.00
+Orlando, FL	Florida	Denver, CO	United Air Lines Inc.	2217.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	United Air Lines Inc.	1579.00
+San Diego, CA	California	Denver, CO	United Air Lines Inc.	1724.00
+Bozeman, MT	Montana	Denver, CO	Frontier Airlines Inc.	1648.00
+Cedar Rapids/Iowa City, IA	Iowa	Denver, CO	Frontier Airlines Inc.	2259.00
+Greensboro/High Point, NC	North Carolina	Denver, CO	Frontier Airlines Inc.	1862.00
+Seattle, WA	Washington	Denver, CO	Frontier Airlines Inc.	1853.00
+Oakland, CA	California	Denver, CO	Federal Express Corporation	0.00
+Cedar Rapids/Iowa City, IA	Iowa	Denver, CO	SkyWest Airlines Inc.	596.00
+Billings, MT	Montana	Denver, CO	United Air Lines Inc.	1486.00
+Des Moines, IA	Iowa	Denver, CO	United Air Lines Inc.	1877.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	1586.00
+Omaha, NE	Nebraska	Denver, CO	United Air Lines Inc.	2069.00
+Ontario, CA	California	Denver, CO	United Air Lines Inc.	2031.00
+San Jose, CA	California	Denver, CO	United Air Lines Inc.	1929.00
+Dallas, TX	Texas	Denver, CO	Southwest Airlines Co.	1910.00
+Fort Lauderdale, FL	Florida	Denver, CO	Southwest Airlines Co.	2359.00
+Nashville, TN	Tennessee	Denver, CO	Frontier Airlines Inc.	2967.00
+Fayetteville, AR	Arkansas	Denver, CO	Trans States Airlines	569.00
+Seattle, WA	Washington	Colorado Springs, CO	Horizon Air	1024.00
+Eugene, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	644.00
+Seattle, WA	Washington	Colorado Springs, CO	SkyWest Airlines Inc.	1053.00
+Albuquerque, NM	New Mexico	Denver, CO	United Air Lines Inc.	2081.00
+Omaha, NE	Nebraska	Denver, CO	United Air Lines Inc.	2331.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	2302.00
+Des Moines, IA	Iowa	Denver, CO	Republic Airlines	932.00
+Madison, WI	Wisconsin	Denver, CO	Frontier Airlines Inc.	2373.00
+Great Falls, MT	Montana	Denver, CO	Trans States Airlines	707.00
+Little Rock, AR	Arkansas	Denver, CO	Trans States Airlines	708.00
+Phoenix, AZ	Arizona	Cortez, CO	Boutique Air	121.00
+Detroit, MI	Michigan	Denver, CO	Delta Air Lines Inc.	2613.00
+Las Vegas, NV	Nevada	Denver, CO	United Air Lines Inc.	2187.00
+New York, NY	New York	Denver, CO	United Air Lines Inc.	1854.00
+Seattle, WA	Washington	Denver, CO	United Air Lines Inc.	2427.00
+Sacramento, CA	California	Denver, CO	United Air Lines Inc.	2296.00
+Memphis, TN	Tennessee	Denver, CO	Republic Airlines	985.00
+Nashville, TN	Tennessee	Denver, CO	Frontier Airlines Inc.	2812.00
+Missoula, MT	Montana	Denver, CO	Frontier Airlines Inc.	1813.00
+Knoxville, TN	Tennessee	Denver, CO	Frontier Airlines Inc.	2302.00
+Memphis, TN	Tennessee	Denver, CO	Federal Express Corporation	0.00
+Memphis, TN	Tennessee	Denver, CO	Federal Express Corporation	0.00
+Memphis, TN	Tennessee	Grand Junction, CO	Federal Express Corporation	0.00
+Detroit, MI	Michigan	Denver, CO	Delta Air Lines Inc.	3222.00
+Tulsa, OK	Oklahoma	Denver, CO	GoJet Airlines LLC d/b/a United Express	1059.00
+Albuquerque, NM	New Mexico	Denver, CO	SkyWest Airlines Inc.	807.00
+El Paso, TX	Texas	Denver, CO	SkyWest Airlines Inc.	1124.00
+Palm Springs, CA	California	Denver, CO	SkyWest Airlines Inc.	1098.00
+Columbus, OH	Ohio	Denver, CO	United Air Lines Inc.	1932.00
+Medford, OR	Oregon	Denver, CO	United Air Lines Inc.	1985.00
+New Orleans, LA	Louisiana	Denver, CO	United Air Lines Inc.	2494.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	2721.00
+San Jose, CA	California	Denver, CO	United Air Lines Inc.	2500.00
+Portland, OR	Oregon	Denver, CO	Frontier Airlines Inc.	2433.00
+Seattle, WA	Washington	Denver, CO	Frontier Airlines Inc.	2934.00
+Des Moines, IA	Iowa	Denver, CO	Trans States Airlines	677.00
+Billings, MT	Montana	Denver, CO	United Parcel Service	0.00
+Ontario, CA	California	Denver, CO	United Parcel Service	0.00
+Rockford, IL	Illinois	Denver, CO	United Parcel Service	0.00
+Eugene, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	1184.00
+Wichita, KS	Kansas	Denver, CO	SkyWest Airlines Inc.	873.00
+Albuquerque, NM	New Mexico	Denver, CO	United Air Lines Inc.	2893.00
+Salt Lake City, UT	Utah	Denver, CO	United Air Lines Inc.	2222.00
+Tampa, FL	Florida	Denver, CO	United Air Lines Inc.	3047.00
+Rapid City, SD	South Dakota	Denver, CO	SkyWest Airlines Inc.	988.00
+Hartford, CT	Connecticut	Denver, CO	United Air Lines Inc.	2334.00
+Bozeman, MT	Montana	Denver, CO	United Air Lines Inc.	1451.00
+Sioux Falls, SD	South Dakota	Denver, CO	United Air Lines Inc.	1495.00
+Spokane, WA	Washington	Denver, CO	United Air Lines Inc.	2518.00
+Reno, NV	Nevada	Denver, CO	United Air Lines Inc.	1960.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	4400.00
+Tampa, FL	Florida	Denver, CO	United Air Lines Inc.	2747.00
+Albuquerque, NM	New Mexico	Denver, CO	Republic Airlines	1220.00
+Kansas City, MO	Missouri	Denver, CO	Republic Airlines	1144.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	Federal Express Corporation	0.00
+Memphis, TN	Tennessee	Denver, CO	Federal Express Corporation	0.00
+Atlanta, GA	Georgia	Denver, CO	GoJet Airlines LLC d/b/a United Express	1231.00
+Dayton, OH	Ohio	Denver, CO	SkyWest Airlines Inc.	1309.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	SkyWest Airlines Inc.	1359.00
+Fresno, CA	California	Denver, CO	SkyWest Airlines Inc.	1266.00
+Phoenix, AZ	Arizona	Denver, CO	SkyWest Airlines Inc.	1489.00
+San Antonio, TX	Texas	Denver, CO	SkyWest Airlines Inc.	1264.00
+Austin, TX	Texas	Denver, CO	United Air Lines Inc.	2599.00
+Charlotte, NC	North Carolina	Denver, CO	United Air Lines Inc.	2835.00
+Sioux Falls, SD	South Dakota	Denver, CO	United Air Lines Inc.	2341.00
+Des Moines, IA	Iowa	Denver, CO	Frontier Airlines Inc.	3192.00
+Chicago, IL	Illinois	Colorado Springs, CO	Frontier Airlines Inc.	2392.00
+Minneapolis, MN	Minnesota	Denver, CO	Delta Air Lines Inc.	3556.00
+Boise, ID	Idaho	Denver, CO	SkyWest Airlines Inc.	852.00
+Salt Lake City, UT	Utah	Aspen, CO	SkyWest Airlines Inc.	1004.00
+Atlanta, GA	Georgia	Denver, CO	United Air Lines Inc.	3030.00
+Grand Rapids, MI	Michigan	Denver, CO	United Air Lines Inc.	2346.00
+Kansas City, MO	Missouri	Denver, CO	United Air Lines Inc.	2571.00
+Ontario, CA	California	Denver, CO	United Air Lines Inc.	2463.00
+Philadelphia, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	2399.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	2854.00
+St. Louis, MO	Missouri	Denver, CO	United Air Lines Inc.	2937.00
+Tampa, FL	Florida	Denver, CO	United Air Lines Inc.	3323.00
+Albuquerque, NM	New Mexico	Durango, CO	Empire Airlines Inc.	0.00
+Farmington, NM	New Mexico	Durango, CO	Empire Airlines Inc.	0.00
+Springfield, MO	Missouri	Denver, CO	GoJet Airlines LLC d/b/a United Express	1171.00
+Austin, TX	Texas	Denver, CO	SkyWest Airlines Inc.	1581.00
+Devils Lake, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	779.00
+Little Rock, AR	Arkansas	Denver, CO	SkyWest Airlines Inc.	1379.00
+Lincoln, NE	Nebraska	Denver, CO	SkyWest Airlines Inc.	1215.00
+Fort Lauderdale, FL	Florida	Denver, CO	United Air Lines Inc.	3078.00
+Minneapolis, MN	Minnesota	Denver, CO	United Air Lines Inc.	2855.00
+New Orleans, LA	Louisiana	Denver, CO	United Air Lines Inc.	2673.00
+Omaha, NE	Nebraska	Denver, CO	United Air Lines Inc.	2966.00
+Portland, OR	Oregon	Denver, CO	United Air Lines Inc.	2615.00
+Richmond, VA	Virginia	Denver, CO	United Air Lines Inc.	2661.00
+San Antonio, TX	Texas	Denver, CO	United Air Lines Inc.	3690.00
+Santa Barbara, CA	California	Denver, CO	United Air Lines Inc.	2037.00
+Cleveland, OH	Ohio	Denver, CO	Southwest Airlines Co.	2872.00
+Bismarck/Mandan, ND	North Dakota	Denver, CO	Frontier Airlines Inc.	3289.00
+Albuquerque, NM	New Mexico	Durango, CO	Federal Express Corporation	0.00
+Farmington, NM	New Mexico	Durango, CO	Federal Express Corporation	0.00
+Memphis, TN	Tennessee	Colorado Springs, CO	Federal Express Corporation	0.00
+Knoxville, TN	Tennessee	Denver, CO	Trans States Airlines	1009.00
+Houston, TX	Texas	Montrose/Delta, CO	ExpressJet Airlines Inc.	1096.00
+Albuquerque, NM	New Mexico	Denver, CO	SkyWest Airlines Inc.	1064.00
+Atlanta, GA	Georgia	Denver, CO	SkyWest Airlines Inc.	1645.00
+Burbank, CA	California	Denver, CO	SkyWest Airlines Inc.	1532.00
+Cincinnati, OH	Kentucky	Denver, CO	SkyWest Airlines Inc.	1650.00
+Sioux Falls, SD	South Dakota	Denver, CO	SkyWest Airlines Inc.	1367.00
+Kansas City, MO	Missouri	Denver, CO	SkyWest Airlines Inc.	1652.00
+Medford, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	1023.00
+San Luis Obispo, CA	California	Denver, CO	SkyWest Airlines Inc.	996.00
+San Francisco, CA	California	Aspen, CO	SkyWest Airlines Inc.	1102.00
+Boise, ID	Idaho	Denver, CO	United Air Lines Inc.	3699.00
+Oklahoma City, OK	Oklahoma	Denver, CO	United Air Lines Inc.	2105.00
+Oklahoma City, OK	Oklahoma	Denver, CO	United Air Lines Inc.	2706.00
+Philadelphia, PA	Pennsylvania	Denver, CO	United Air Lines Inc.	3887.00
+Phoenix, AZ	Arizona	Denver, CO	United Air Lines Inc.	3365.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	6738.00
+Charleston, SC	South Carolina	Denver, CO	Southwest Airlines Co.	2635.00
+Detroit, MI	Michigan	Denver, CO	Southwest Airlines Co.	3708.00
+Louisville, KY	Kentucky	Denver, CO	Southwest Airlines Co.	2760.00
+Tucson, AZ	Arizona	Denver, CO	Southwest Airlines Co.	3476.00
+Columbus, OH	Ohio	Denver, CO	Republic Airlines	1450.00
+Midland/Odessa, TX	Texas	Denver, CO	Republic Airlines	1269.00
+Cincinnati, OH	Kentucky	Denver, CO	Delta Air Lines Inc.	2486.00
+Wichita, KS	Kansas	Denver, CO	GoJet Airlines LLC d/b/a United Express	1157.00
+Burbank, CA	California	Denver, CO	SkyWest Airlines Inc.	1059.00
+Houston, TX	Texas	Aspen, CO	SkyWest Airlines Inc.	1489.00
+Tulsa, OK	Oklahoma	Denver, CO	SkyWest Airlines Inc.	1061.00
+Boise, ID	Idaho	Denver, CO	United Air Lines Inc.	3522.00
+Fort Lauderdale, FL	Florida	Denver, CO	United Air Lines Inc.	4189.00
+Wichita, KS	Kansas	Denver, CO	United Air Lines Inc.	2917.00
+Jackson, WY	Wyoming	Denver, CO	United Air Lines Inc.	2327.00
+Kona, HI	Hawaii	Denver, CO	United Air Lines Inc.	3052.00
+Kahului, HI	Hawaii	Denver, CO	United Air Lines Inc.	3450.00
+Tulsa, OK	Oklahoma	Denver, CO	United Air Lines Inc.	2594.00
+Boise, ID	Idaho	Denver, CO	Southwest Airlines Co.	3865.00
+Jacksonville, FL	Florida	Denver, CO	Southwest Airlines Co.	3283.00
+Ontario, CA	California	Denver, CO	Southwest Airlines Co.	4050.00
+San Jose, CA	California	Denver, CO	Southwest Airlines Co.	3856.00
+Austin, TX	Texas	Denver, CO	Republic Airlines	1627.00
+Louisville, KY	Kentucky	Denver, CO	Republic Airlines	1547.00
+Tulsa, OK	Oklahoma	Denver, CO	Republic Airlines	1365.00
+Sioux Falls, SD	South Dakota	Denver, CO	Frontier Airlines Inc.	3458.00
+Casper, WY	Wyoming	Hayden, CO	Federal Express Corporation	0.00
+Cincinnati, OH	Kentucky	Denver, CO	GoJet Airlines LLC d/b/a United Express	1602.00
+Palm Springs, CA	California	Denver, CO	SkyWest Airlines Inc.	1516.00
+Boston, MA	Massachusetts	Denver, CO	United Air Lines Inc.	4020.00
+Charlotte, NC	North Carolina	Denver, CO	United Air Lines Inc.	2770.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	United Air Lines Inc.	4022.00
+Minneapolis, MN	Minnesota	Denver, CO	United Air Lines Inc.	3668.00
+Sacramento, CA	California	Denver, CO	United Air Lines Inc.	2777.00
+Dallas, TX	Texas	Denver, CO	Southwest Airlines Co.	4063.00
+Sacramento, CA	California	Denver, CO	Southwest Airlines Co.	3748.00
+Las Vegas, NV	Nevada	Colorado Springs, CO	Frontier Airlines Inc.	3157.00
+Salt Lake City, UT	Utah	Denver, CO	Frontier Airlines Inc.	3477.00
+St. Louis, MO	Missouri	Denver, CO	Frontier Airlines Inc.	3592.00
+Albuquerque, NM	New Mexico	Alamosa, CO	Boutique Air	114.00
+Memphis, TN	Tennessee	Denver, CO	GoJet Airlines LLC d/b/a United Express	1693.00
+Oklahoma City, OK	Oklahoma	Denver, CO	GoJet Airlines LLC d/b/a United Express	1519.00
+Nashville, TN	Tennessee	Denver, CO	SkyWest Airlines Inc.	1878.00
+Des Moines, IA	Iowa	Denver, CO	SkyWest Airlines Inc.	1876.00
+Williston, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	857.00
+Omaha, NE	Nebraska	Denver, CO	SkyWest Airlines Inc.	1856.00
+Shreveport, LA	Louisiana	Denver, CO	SkyWest Airlines Inc.	1034.00
+Phoenix, AZ	Arizona	Denver, CO	United Air Lines Inc.	4320.00
+San Jose, CA	California	Denver, CO	United Air Lines Inc.	3602.00
+Austin, TX	Texas	Denver, CO	Southwest Airlines Co.	4367.00
+Fort Lauderdale, FL	Florida	Denver, CO	Southwest Airlines Co.	3526.00
+Spokane, WA	Washington	Denver, CO	Southwest Airlines Co.	3776.00
+Indianapolis, IN	Indiana	Denver, CO	Frontier Airlines Inc.	4463.00
+Las Vegas, NV	Nevada	Denver, CO	Frontier Airlines Inc.	3674.00
+Minneapolis, MN	Minnesota	Denver, CO	Sun Country Airlines d/b/a MN Airlines	2982.00
+Omaha, NE	Nebraska	Denver, CO	GoJet Airlines LLC d/b/a United Express	1681.00
+Nashville, TN	Tennessee	Denver, CO	SkyWest Airlines Inc.	1573.00
+Los Angeles, CA	California	Colorado Springs, CO	SkyWest Airlines Inc.	1134.00
+Phoenix, AZ	Arizona	Denver, CO	United Air Lines Inc.	3283.00
+San Antonio, TX	Texas	Denver, CO	United Air Lines Inc.	3716.00
+Albany, NY	New York	Denver, CO	Southwest Airlines Co.	3488.00
+Hartford, CT	Connecticut	Denver, CO	Southwest Airlines Co.	4554.00
+Boston, MA	Massachusetts	Denver, CO	Southwest Airlines Co.	4330.00
+Reno, NV	Nevada	Denver, CO	Southwest Airlines Co.	4227.00
+Los Angeles, CA	California	Denver, CO	American Airlines Inc.	4196.00
+Miami, FL	Florida	Denver, CO	American Airlines Inc.	4330.00
+Phoenix, AZ	Arizona	Denver, CO	American Airlines Inc.	3296.00
+Missoula, MT	Montana	Denver, CO	GoJet Airlines LLC d/b/a United Express	1643.00
+Birmingham, AL	Alabama	Denver, CO	SkyWest Airlines Inc.	1767.00
+Lincoln, NE	Nebraska	Denver, CO	SkyWest Airlines Inc.	1040.00
+Austin, TX	Texas	Denver, CO	United Air Lines Inc.	4160.00
+Washington, DC	Virginia	Denver, CO	United Air Lines Inc.	4629.00
+Portland, OR	Oregon	Denver, CO	Frontier Airlines Inc.	4765.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	Frontier Airlines Inc.	3890.00
+San Antonio, TX	Texas	Denver, CO	Frontier Airlines Inc.	3981.00
+Fort Lauderdale, FL	Florida	Denver, CO	Spirit Air Lines	5583.00
+Houston, TX	Texas	Denver, CO	Spirit Air Lines	4792.00
+Seattle, WA	Washington	Denver, CO	Alaska Airlines Inc.	4472.00
+Cody, WY	Wyoming	Denver, CO	Trans States Airlines	1104.00
+Dallas/Fort Worth, TX	Texas	Eagle, CO	American Airlines Inc.	3286.00
+Dallas/Fort Worth, TX	Texas	Aspen, CO	SkyWest Airlines Inc.	1587.00
+Los Angeles, CA	California	Denver, CO	United Air Lines Inc.	9571.00
+Newark, NJ	New Jersey	Denver, CO	Southwest Airlines Co.	4540.00
+Grand Rapids, MI	Michigan	Denver, CO	Southwest Airlines Co.	3210.00
+Birmingham, AL	Alabama	Denver, CO	Republic Airlines	1757.00
+Atlanta, GA	Georgia	Denver, CO	Frontier Airlines Inc.	5027.00
+Washington, DC	Virginia	Denver, CO	Frontier Airlines Inc.	4038.00
+San Diego, CA	California	Denver, CO	Frontier Airlines Inc.	4210.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	Spirit Air Lines	4925.00
+Detroit, MI	Michigan	Denver, CO	Spirit Air Lines	4613.00
+Los Angeles, CA	California	Denver, CO	Spirit Air Lines	4846.00
+Minneapolis, MN	Minnesota	Denver, CO	Spirit Air Lines	4690.00
+San Diego, CA	California	Denver, CO	Spirit Air Lines	4826.00
+Dallas/Fort Worth, TX	Texas	Montrose/Delta, CO	Mesa Airlines Inc.	1885.00
+Phoenix, AZ	Arizona	Montrose/Delta, CO	Mesa Airlines Inc.	1213.00
+Seattle, WA	Washington	Denver, CO	Alaska Airlines Inc.	4770.00
+Huntsville, AL	Alabama	Denver, CO	Trans States Airlines	1273.00
+Phoenix, AZ	Arizona	Denver, CO	American Airlines Inc.	5219.00
+Atlanta, GA	Georgia	Colorado Springs, CO	Delta Air Lines Inc.	4272.00
+Detroit, MI	Michigan	Denver, CO	Delta Air Lines Inc.	4616.00
+Bozeman, MT	Montana	Denver, CO	SkyWest Airlines Inc.	1377.00
+Helena, MT	Montana	Denver, CO	SkyWest Airlines Inc.	1230.00
+Houston, TX	Texas	Colorado Springs, CO	SkyWest Airlines Inc.	1821.00
+Jamestown, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	1002.00
+Spokane, WA	Washington	Denver, CO	United Air Lines Inc.	4629.00
+Honolulu, HI	Hawaii	Denver, CO	United Air Lines Inc.	10120.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	6022.00
+Wichita, KS	Kansas	Denver, CO	United Air Lines Inc.	3015.00
+Indianapolis, IN	Indiana	Denver, CO	United Air Lines Inc.	5095.00
+Seattle, WA	Washington	Denver, CO	United Air Lines Inc.	4659.00
+Philadelphia, PA	Pennsylvania	Denver, CO	Southwest Airlines Co.	4114.00
+Tampa, FL	Florida	Denver, CO	Southwest Airlines Co.	4158.00
+Austin, TX	Texas	Denver, CO	Frontier Airlines Inc.	6530.00
+Cleveland, OH	Ohio	Denver, CO	Frontier Airlines Inc.	5709.00
+Charlotte, NC	North Carolina	Denver, CO	Frontier Airlines Inc.	4265.00
+Columbus, OH	Ohio	Denver, CO	Frontier Airlines Inc.	4684.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	Frontier Airlines Inc.	4219.00
+Las Vegas, NV	Nevada	Denver, CO	Frontier Airlines Inc.	6328.00
+New York, NY	New York	Denver, CO	Frontier Airlines Inc.	5148.00
+Orlando, FL	Florida	Colorado Springs, CO	Frontier Airlines Inc.	4243.00
+Memphis, TN	Tennessee	Denver, CO	Frontier Airlines Inc.	6482.00
+Miami, FL	Florida	Denver, CO	Frontier Airlines Inc.	4934.00
+New Orleans, LA	Louisiana	Denver, CO	Frontier Airlines Inc.	5291.00
+Omaha, NE	Nebraska	Denver, CO	Frontier Airlines Inc.	4940.00
+Portland, OR	Oregon	Denver, CO	Frontier Airlines Inc.	6037.00
+Philadelphia, PA	Pennsylvania	Denver, CO	Frontier Airlines Inc.	5089.00
+Philadelphia, PA	Pennsylvania	Denver, CO	Frontier Airlines Inc.	4107.00
+Phoenix, AZ	Arizona	Colorado Springs, CO	Frontier Airlines Inc.	4175.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	Frontier Airlines Inc.	4543.00
+San Diego, CA	California	Denver, CO	Frontier Airlines Inc.	6308.00
+Seattle, WA	Washington	Denver, CO	Frontier Airlines Inc.	6262.00
+Salt Lake City, UT	Utah	Denver, CO	Frontier Airlines Inc.	6107.00
+St. Louis, MO	Missouri	Denver, CO	Frontier Airlines Inc.	6556.00
+Tampa, FL	Florida	Denver, CO	Frontier Airlines Inc.	4031.00
+Los Angeles, CA	California	Denver, CO	Spirit Air Lines	3987.00
+Louisville, KY	Kentucky	Denver, CO	Trans States Airlines	1343.00
+Philadelphia, PA	Pennsylvania	Denver, CO	American Airlines Inc.	5483.00
+Billings, MT	Montana	Denver, CO	SkyWest Airlines Inc.	1950.00
+Wichita, KS	Kansas	Denver, CO	SkyWest Airlines Inc.	1101.00
+Chicago, IL	Illinois	Colorado Springs, CO	SkyWest Airlines Inc.	2193.00
+Santa Barbara, CA	California	Denver, CO	SkyWest Airlines Inc.	1889.00
+Phoenix, AZ	Arizona	Denver, CO	United Air Lines Inc.	4094.00
+Sacramento, CA	California	Denver, CO	United Air Lines Inc.	4744.00
+Atlanta, GA	Georgia	Denver, CO	Frontier Airlines Inc.	4458.00
+San Diego, CA	California	Denver, CO	Frontier Airlines Inc.	5327.00
+Salt Lake City, UT	Utah	Denver, CO	Frontier Airlines Inc.	5338.00
+Louisville, KY	Kentucky	Denver, CO	United Parcel Service	0.00
+Salt Lake City, UT	Utah	Denver, CO	Delta Air Lines Inc.	5168.00
+Austin, TX	Texas	Denver, CO	GoJet Airlines LLC d/b/a United Express	1961.00
+Boston, MA	Massachusetts	Denver, CO	United Air Lines Inc.	4612.00
+Cleveland, OH	Ohio	Denver, CO	United Air Lines Inc.	5316.00
+Ontario, CA	California	Denver, CO	Southwest Airlines Co.	4319.00
+Philadelphia, PA	Pennsylvania	Denver, CO	Southwest Airlines Co.	5312.00
+Reno, NV	Nevada	Denver, CO	Southwest Airlines Co.	4049.00
+Milwaukee, WI	Wisconsin	Denver, CO	Frontier Airlines Inc.	4263.00
+New York, NY	New York	Denver, CO	JetBlue Airways	5414.00
+Fargo, ND	North Dakota	Denver, CO	Trans States Airlines	1207.00
+Los Angeles, CA	California	Colorado Springs, CO	SkyWest Airlines Inc.	2034.00
+Atlanta, GA	Georgia	Denver, CO	United Air Lines Inc.	5265.00
+Omaha, NE	Nebraska	Denver, CO	United Air Lines Inc.	3938.00
+Milwaukee, WI	Wisconsin	Denver, CO	Southwest Airlines Co.	5196.00
+Tucson, AZ	Arizona	Denver, CO	Southwest Airlines Co.	4278.00
+Indianapolis, IN	Indiana	Denver, CO	Republic Airlines	2209.00
+Kansas City, MO	Missouri	Denver, CO	Frontier Airlines Inc.	5574.00
+Memphis, TN	Tennessee	Denver, CO	Federal Express Corporation	0.00
+Tucson, AZ	Arizona	Denver, CO	SkyWest Airlines Inc.	1613.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	United Air Lines Inc.	5667.00
+Detroit, MI	Michigan	Denver, CO	Frontier Airlines Inc.	5791.00
+Albuquerque, NM	New Mexico	Denver, CO	Trans States Airlines	1561.00
+Grand Rapids, MI	Michigan	Denver, CO	SkyWest Airlines Inc.	2369.00
+New York, NY	New York	Denver, CO	United Air Lines Inc.	4905.00
+Milwaukee, WI	Wisconsin	Denver, CO	United Air Lines Inc.	3980.00
+San Diego, CA	California	Denver, CO	United Air Lines Inc.	5720.00
+Santa Ana, CA	California	Denver, CO	United Air Lines Inc.	4076.00
+Detroit, MI	Michigan	Denver, CO	Southwest Airlines Co.	4406.00
+Spokane, WA	Washington	Denver, CO	Southwest Airlines Co.	4586.00
+Washington, DC	Virginia	Denver, CO	Southwest Airlines Co.	5159.00
+Portland, OR	Oregon	Denver, CO	Southwest Airlines Co.	5689.00
+Indianapolis, IN	Indiana	Denver, CO	Federal Express Corporation	0.00
+El Paso, TX	Texas	Denver, CO	Trans States Airlines	1612.00
+Louisville, KY	Kentucky	Denver, CO	United Parcel Service	0.00
+Dayton, OH	Ohio	Denver, CO	GoJet Airlines LLC d/b/a United Express	2229.00
+Sioux Falls, SD	South Dakota	Denver, CO	SkyWest Airlines Inc.	1546.00
+Fayetteville, AR	Arkansas	Denver, CO	SkyWest Airlines Inc.	1418.00
+Newark, NJ	New Jersey	Denver, CO	United Air Lines Inc.	4873.00
+Moline, IL	Illinois	Denver, CO	Trans States Airlines	1478.00
+Atlanta, GA	Georgia	Denver, CO	Delta Air Lines Inc.	6261.00
+New York, NY	New York	Denver, CO	Delta Air Lines Inc.	4346.00
+Rapid City, SD	South Dakota	Denver, CO	GoJet Airlines LLC d/b/a United Express	2012.00
+Midland/Odessa, TX	Texas	Denver, CO	SkyWest Airlines Inc.	1585.00
+Baltimore, MD	Maryland	Denver, CO	United Air Lines Inc.	6129.00
+Newark, NJ	New Jersey	Denver, CO	United Air Lines Inc.	5570.00
+Chicago, IL	Illinois	Denver, CO	United Air Lines Inc.	5281.00
+Boise, ID	Idaho	Denver, CO	Southwest Airlines Co.	4737.00
+Orlando, FL	Florida	Denver, CO	Southwest Airlines Co.	6252.00
+Bismarck/Mandan, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	1568.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	4290.00
+Des Moines, IA	Iowa	Denver, CO	United Air Lines Inc.	4248.00
+Seattle, WA	Washington	Denver, CO	Alaska Airlines Inc.	4029.00
+Lincoln, NE	Nebraska	Denver, CO	Trans States Airlines	1542.00
+Tucson, AZ	Arizona	Denver, CO	SkyWest Airlines Inc.	2804.00
+San Diego, CA	California	Denver, CO	United Air Lines Inc.	4750.00
+Rapid City, SD	South Dakota	Denver, CO	SkyWest Airlines Inc.	1453.00
+Los Angeles, CA	California	Denver, CO	United Air Lines Inc.	5580.00
+Boise, ID	Idaho	Denver, CO	SkyWest Airlines Inc.	2826.00
+Riverton/Lander, WY	Wyoming	Denver, CO	Great Lakes Airlines	351.00
+Cedar Rapids/Iowa City, IA	Iowa	Denver, CO	United Air Lines Inc.	3950.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	United Air Lines Inc.	5009.00
+Kalispell, MT	Montana	Denver, CO	United Air Lines Inc.	4051.00
+Las Vegas, NV	Nevada	Denver, CO	Southwest Airlines Co.	6430.00
+St. Louis, MO	Missouri	Denver, CO	Southwest Airlines Co.	6641.00
+Salt Lake City, UT	Utah	Denver, CO	Delta Air Lines Inc.	4557.00
+Oklahoma City, OK	Oklahoma	Denver, CO	SkyWest Airlines Inc.	2797.00
+Baltimore, MD	Maryland	Denver, CO	Southwest Airlines Co.	4751.00
+Seattle, WA	Washington	Denver, CO	Southwest Airlines Co.	5983.00
+Jackson, WY	Wyoming	Denver, CO	United Air Lines Inc.	5042.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	United Air Lines Inc.	6246.00
+Seattle, WA	Washington	Denver, CO	Delta Air Lines Inc.	4378.00
+Minneapolis, MN	Minnesota	Denver, CO	United Air Lines Inc.	5065.00
+Springfield, MO	Missouri	Denver, CO	SkyWest Airlines Inc.	1747.00
+Chicago, IL	Illinois	Denver, CO	Frontier Airlines Inc.	9732.00
+St. Louis, MO	Missouri	Denver, CO	Trans States Airlines	2129.00
+Farmington, NM	New Mexico	Denver, CO	Great Lakes Airlines	381.00
+San Jose, CA	California	Denver, CO	SkyWest Airlines Inc.	3231.00
+Detroit, MI	Michigan	Denver, CO	United Air Lines Inc.	6859.00
+Madison, WI	Wisconsin	Denver, CO	United Air Lines Inc.	5284.00
+New York, NY	New York	Denver, CO	Delta Air Lines Inc.	6261.00
+Missoula, MT	Montana	Denver, CO	SkyWest Airlines Inc.	1757.00
+Bend/Redmond, OR	Oregon	Denver, CO	SkyWest Airlines Inc.	2847.00
+Newark, NJ	New Jersey	Denver, CO	United Air Lines Inc.	7486.00
+Orlando, FL	Florida	Denver, CO	United Air Lines Inc.	6692.00
+Los Angeles, CA	California	Denver, CO	Southwest Airlines Co.	7583.00
+Detroit, MI	Michigan	Denver, CO	Delta Air Lines Inc.	7061.00
+New York, NY	New York	Denver, CO	Delta Air Lines Inc.	7342.00
+Cleveland, OH	Ohio	Denver, CO	United Air Lines Inc.	7395.00
+Pittsburgh, PA	Pennsylvania	Denver, CO	Southwest Airlines Co.	6423.00
+Houston, TX	Texas	Colorado Springs, CO	ExpressJet Airlines Inc.	2193.00
+Jackson, WY	Wyoming	Denver, CO	GoJet Airlines LLC d/b/a United Express	2522.00
+Bakersfield, CA	California	Denver, CO	SkyWest Airlines Inc.	1877.00
+Orlando, FL	Florida	Denver, CO	United Air Lines Inc.	7447.00
+Portland, OR	Oregon	Denver, CO	United Air Lines Inc.	7755.00
+Newark, NJ	New Jersey	Denver, CO	Southwest Airlines Co.	6315.00
+Chicago, IL	Illinois	Aspen, CO	SkyWest Airlines Inc.	2878.00
+Anchorage, AK	Alaska	Denver, CO	United Air Lines Inc.	5427.00
+Oakland, CA	California	Denver, CO	Southwest Airlines Co.	7861.00
+Salina, KS	Kansas	Denver, CO	Great Lakes Airlines	758.00
+Pierre, SD	South Dakota	Denver, CO	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	1858.00
+Salt Lake City, UT	Utah	Denver, CO	SkyWest Airlines Inc.	1912.00
+Sacramento, CA	California	Denver, CO	SkyWest Airlines Inc.	3307.00
+Washington, DC	Virginia	Denver, CO	Southwest Airlines Co.	6809.00
+Dickinson, ND	North Dakota	Denver, CO	Trans States Airlines	1671.00
+Alliance, NE	Nebraska	Denver, CO	Boutique Air	348.00
+Chadron, NE	Nebraska	Denver, CO	Boutique Air	321.00
+McCook, NE	Nebraska	Denver, CO	Boutique Air	242.00
+Vernal, UT	Utah	Denver, CO	Boutique Air	356.00
+Hays, KS	Kansas	Denver, CO	SkyWest Airlines Inc.	787.00
+San Diego, CA	California	Denver, CO	United Air Lines Inc.	7769.00
+Nashville, TN	Tennessee	Denver, CO	Southwest Airlines Co.	8402.00
+Tulsa, OK	Oklahoma	Denver, CO	Southwest Airlines Co.	6899.00
+Amarillo, TX	Texas	Denver, CO	Trans States Airlines	2218.00
+Laramie, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	1249.00
+Little Rock, AR	Arkansas	Denver, CO	SkyWest Airlines Inc.	2314.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	8865.00
+Atlanta, GA	Georgia	Denver, CO	Southwest Airlines Co.	7356.00
+Phoenix, AZ	Arizona	Denver, CO	Frontier Airlines Inc.	7396.00
+Minot, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	1836.00
+Los Angeles, CA	California	Denver, CO	United Air Lines Inc.	8408.00
+Reno, NV	Nevada	Denver, CO	United Air Lines Inc.	7154.00
+Raleigh/Durham, NC	North Carolina	Denver, CO	Southwest Airlines Co.	7434.00
+Lubbock, TX	Texas	Denver, CO	Trans States Airlines	2259.00
+Missoula, MT	Montana	Denver, CO	Trans States Airlines	2414.00
+Moab, UT	Utah	Denver, CO	Boutique Air	264.00
+Atlanta, GA	Georgia	Denver, CO	Delta Air Lines Inc.	10174.00
+Gillette, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	2138.00
+Chicago, IL	Illinois	Colorado Springs, CO	SkyWest Airlines Inc.	2455.00
+Rock Springs, WY	Wyoming	Denver, CO	SkyWest Airlines Inc.	1440.00
+Salt Lake City, UT	Utah	Colorado Springs, CO	SkyWest Airlines Inc.	2470.00
+Bozeman, MT	Montana	Denver, CO	United Air Lines Inc.	6757.00
+Las Vegas, NV	Nevada	Denver, CO	United Air Lines Inc.	9127.00
+New Orleans, LA	Louisiana	Denver, CO	Southwest Airlines Co.	7596.00
+Santa Ana, CA	California	Denver, CO	Frontier Airlines Inc.	9464.00
+Casper, WY	Wyoming	Denver, CO	Trans States Airlines	2116.00
+Minneapolis, MN	Minnesota	Denver, CO	Frontier Airlines Inc.	7902.00
+Salt Lake City, UT	Utah	Denver, CO	Delta Air Lines Inc.	5631.00
+Kansas City, MO	Missouri	Denver, CO	GoJet Airlines LLC d/b/a United Express	3687.00
+Los Angeles, CA	California	Aspen, CO	SkyWest Airlines Inc.	2578.00
+Salt Lake City, UT	Utah	Denver, CO	SkyWest Airlines Inc.	3746.00
+Las Vegas, NV	Nevada	Denver, CO	United Air Lines Inc.	8272.00
+Boston, MA	Massachusetts	Denver, CO	JetBlue Airways	7738.00
+Williston, ND	North Dakota	Denver, CO	Trans States Airlines	2374.00
+Philadelphia, PA	Pennsylvania	Denver, CO	American Airlines Inc.	8000.00
+Pasco/Kennewick/Richland, WA	Washington	Denver, CO	SkyWest Airlines Inc.	2554.00
+St. George, UT	Utah	Denver, CO	SkyWest Airlines Inc.	2615.00
+Billings, MT	Montana	Denver, CO	United Air Lines Inc.	5383.00
+Chicago, IL	Illinois	Denver, CO	United Air Lines Inc.	9954.00
+Cincinnati, OH	Kentucky	Denver, CO	Frontier Airlines Inc.	9470.00
+Houston, TX	Texas	Denver, CO	Frontier Airlines Inc.	12625.00
+Los Angeles, CA	California	Denver, CO	Frontier Airlines Inc.	9957.00
+Chicago, IL	Illinois	Denver, CO	Spirit Air Lines	9995.00
+Santa Fe, NM	New Mexico	Denver, CO	Trans States Airlines	2625.00
+Miami, FL	Florida	Denver, CO	American Airlines Inc.	7971.00
+Phoenix, AZ	Arizona	Denver, CO	American Airlines Inc.	8619.00
+El Paso, TX	Texas	Denver, CO	SkyWest Airlines Inc.	2410.00
+Phoenix, AZ	Arizona	Durango, CO	SkyWest Airlines Inc.	3310.00
+Phoenix, AZ	Arizona	Grand Junction, CO	SkyWest Airlines Inc.	3196.00
+Boston, MA	Massachusetts	Denver, CO	United Air Lines Inc.	10011.00
+Las Vegas, NV	Nevada	Denver, CO	Frontier Airlines Inc.	9769.00
+Orlando, FL	Florida	Denver, CO	Frontier Airlines Inc.	13187.00
+San Francisco, CA	California	Denver, CO	Frontier Airlines Inc.	10251.00
+Las Vegas, NV	Nevada	Denver, CO	Spirit Air Lines	9627.00
+Columbus, OH	Ohio	Denver, CO	Southwest Airlines Co.	8200.00
+St. Louis, MO	Missouri	Denver, CO	GoJet Airlines LLC d/b/a United Express	3905.00
+Boston, MA	Massachusetts	Denver, CO	Southwest Airlines Co.	8179.00
+Casper, WY	Wyoming	Denver, CO	GoJet Airlines LLC d/b/a United Express	3257.00
+Tampa, FL	Florida	Denver, CO	Southwest Airlines Co.	10585.00
+Great Falls, MT	Montana	Denver, CO	SkyWest Airlines Inc.	2393.00
+New York, NY	New York	Denver, CO	United Air Lines Inc.	10685.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	10280.00
+Phoenix, AZ	Arizona	Denver, CO	Southwest Airlines Co.	10749.00
+Portland, OR	Oregon	Denver, CO	United Air Lines Inc.	7912.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	9050.00
+Houston, TX	Texas	Denver, CO	Southwest Airlines Co.	9909.00
+Bismarck/Mandan, ND	North Dakota	Denver, CO	Trans States Airlines	2544.00
+San Diego, CA	California	Denver, CO	Southwest Airlines Co.	11877.00
+Oklahoma City, OK	Oklahoma	Denver, CO	Southwest Airlines Co.	8844.00
+Rapid City, SD	South Dakota	Denver, CO	Trans States Airlines	2700.00
+Salt Lake City, UT	Utah	Denver, CO	Republic Airlines	4391.00
+San Antonio, TX	Texas	Denver, CO	Southwest Airlines Co.	10296.00
+Fargo, ND	North Dakota	Denver, CO	SkyWest Airlines Inc.	2362.00
+Portland, OR	Oregon	Denver, CO	Southwest Airlines Co.	10611.00
+Milwaukee, WI	Wisconsin	Denver, CO	Southwest Airlines Co.	10537.00
+Albuquerque, NM	New Mexico	Denver, CO	Southwest Airlines Co.	10387.00
+Santa Ana, CA	California	Denver, CO	United Air Lines Inc.	11062.00
+Seattle, WA	Washington	Denver, CO	Alaska Airlines Inc.	12319.00
+Washington, DC	Virginia	Denver, CO	Frontier Airlines Inc.	13523.00
+New York, NY	New York	Denver, CO	United Air Lines Inc.	12628.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	12784.00
+Chicago, IL	Illinois	Denver, CO	American Airlines Inc.	9842.00
+Los Angeles, CA	California	Denver, CO	United Air Lines Inc.	13890.00
+Washington, DC	Virginia	Denver, CO	United Air Lines Inc.	13876.00
+Burbank, CA	California	Denver, CO	Southwest Airlines Co.	10876.00
+New York, NY	New York	Denver, CO	Southwest Airlines Co.	10491.00
+Omaha, NE	Nebraska	Denver, CO	Southwest Airlines Co.	10802.00
+Atlanta, GA	Georgia	Denver, CO	Southwest Airlines Co.	14138.00
+Salt Lake City, UT	Utah	Denver, CO	SkyWest Airlines Inc.	5933.00
+Salt Lake City, UT	Utah	Grand Junction, CO	SkyWest Airlines Inc.	3801.00
+Orlando, FL	Florida	Denver, CO	Southwest Airlines Co.	11793.00
+San Francisco, CA	California	Denver, CO	Virgin America	11057.00
+Nashville, TN	Tennessee	Denver, CO	Southwest Airlines Co.	11708.00
+Idaho Falls, ID	Idaho	Denver, CO	SkyWest Airlines Inc.	3407.00
+San Jose, CA	California	Denver, CO	Southwest Airlines Co.	11541.00
+Dallas/Fort Worth, TX	Texas	Durango, CO	Mesa Airlines Inc.	5630.00
+Dallas/Fort Worth, TX	Texas	Grand Junction, CO	Envoy Air	5376.00
+Los Angeles, CA	California	Denver, CO	American Airlines Inc.	9969.00
+Oakland, CA	California	Denver, CO	Southwest Airlines Co.	11998.00
+Seattle, WA	Washington	Denver, CO	United Air Lines Inc.	13073.00
+Chicago, IL	Illinois	Denver, CO	American Airlines Inc.	13418.00
+Seattle, WA	Washington	Denver, CO	Southwest Airlines Co.	12588.00
+Houston, TX	Texas	Denver, CO	Southwest Airlines Co.	15853.00
+Seattle, WA	Washington	Denver, CO	SkyWest Airlines Inc.	7063.00
+Newark, NJ	New Jersey	Denver, CO	United Air Lines Inc.	15891.00
+Fresno, CA	California	Denver, CO	SkyWest Airlines Inc.	4373.00
+St. Louis, MO	Missouri	Denver, CO	Southwest Airlines Co.	13754.00
+Indianapolis, IN	Indiana	Denver, CO	Southwest Airlines Co.	13816.00
+San Diego, CA	California	Denver, CO	Southwest Airlines Co.	13849.00
+Austin, TX	Texas	Denver, CO	Southwest Airlines Co.	14803.00
+Chicago, IL	Illinois	Denver, CO	Southwest Airlines Co.	15001.00
+San Francisco, CA	California	Denver, CO	United Air Lines Inc.	15815.00
+Sacramento, CA	California	Denver, CO	Southwest Airlines Co.	15625.00
+Dallas/Fort Worth, TX	Texas	Colorado Springs, CO	American Airlines Inc.	14678.00
+San Francisco, CA	California	Denver, CO	Southwest Airlines Co.	16528.00
+Baltimore, MD	Maryland	Denver, CO	Southwest Airlines Co.	19734.00
+Houston, TX	Texas	Denver, CO	United Air Lines Inc.	18031.00
+Minneapolis, MN	Minnesota	Denver, CO	Southwest Airlines Co.	17356.00
+Washington, DC	Virginia	Denver, CO	United Air Lines Inc.	21180.00
+Los Angeles, CA	California	Denver, CO	SkyWest Airlines Inc.	9952.00
+Santa Ana, CA	California	Denver, CO	Southwest Airlines Co.	18540.00
+Atlanta, GA	Georgia	Denver, CO	Delta Air Lines Inc.	21790.00
+Minneapolis, MN	Minnesota	Denver, CO	Delta Air Lines Inc.	22892.00
+Chicago, IL	Illinois	Denver, CO	Southwest Airlines Co.	24270.00
+Salt Lake City, UT	Utah	Denver, CO	Southwest Airlines Co.	20414.00
+Dallas, TX	Texas	Denver, CO	Southwest Airlines Co.	21532.00
+Los Angeles, CA	California	Denver, CO	Southwest Airlines Co.	23055.00
+Kansas City, MO	Missouri	Denver, CO	Southwest Airlines Co.	24267.00
+Charlotte, NC	North Carolina	Denver, CO	American Airlines Inc.	30654.00
+Phoenix, AZ	Arizona	Denver, CO	Southwest Airlines Co.	27878.00
+Las Vegas, NV	Nevada	Denver, CO	Southwest Airlines Co.	28061.00
+Chicago, IL	Illinois	Denver, CO	United Air Lines Inc.	33287.00
+Dallas/Fort Worth, TX	Texas	Denver, CO	American Airlines Inc.	43885.00
+
+
+/*4) List all the flights into Denver that the distance was between 500 and 1200 miles. Display the following
+information:
+Origin city and state, airline name*/
+
+ORIGIN_CITY_NAME	ORIGIN_STATE_NM	AIRLINE_NAME
+Denver, CO	Colorado	Virgin America
+Denver, CO	Colorado	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Jet Aviation Flight Services, Inc.
+Denver, CO	Colorado	Jet Aviation Flight Services, Inc.
+Denver, CO	Colorado	Jet Aviation Flight Services, Inc.
+Denver, CO	Colorado	Omni Air International LLC
+Denver, CO	Colorado	Swift Air, LLC
+Denver, CO	Colorado	Swift Air, LLC
+Denver, CO	Colorado	Kalitta Charters II
+Denver, CO	Colorado	CFM Inc d/b/a Contour Airlines
+Denver, CO	Colorado	Sun Country Airlines d/b/a MN Airlines
+Denver, CO	Colorado	Southern Air Inc.
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways
+Denver, CO	Colorado	Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Endeavor Air Inc.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Sun Country Airlines d/b/a MN Airlines
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Via Airlines d/b/a Charter Air Transport
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Allegiant Air
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Sun Country Airlines d/b/a MN Airlines
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Alaska Airlines Inc.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Alaska Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	United Parcel Service
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Federal Express Corporation
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Alaska Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Republic Airlines
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	GoJet Airlines LLC d/b/a United Express
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Spirit Air Lines
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Frontier Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Trans States Airlines
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Alaska Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Virgin America
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	SkyWest Airlines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Delta Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	Southwest Airlines Co.
+Denver, CO	Colorado	American Airlines Inc.
+Denver, CO	Colorado	United Air Lines Inc.
+Denver, CO	Colorado	Southwest Airlines Co.
+
+
+/*Write a PL/pgSQL stored procedure that analyzes the various flights of the airlines. The report should display:
+Airline name, total number of flights, average distance, ratio of passengers to distance, ratio of freight to
+distance, correlation coefficient for passengers to freight, correlation coefficient for passengers to distance.*/
+DELIMITER $$
+
+Carrier_Name	COUNT(Carrier_Name)	AVG(DISTANCE)	SUM(PASSENGERS)/SUM(DISTANCE)	SUM(FREIGHT)/SUM(DISTANCE)	correlation	correlation
+Aerodynamics Inc. d/b/a SkyValue d/b/a SkyValue Airways	12	615.416667	0.579012	0.000000	\N	0.6303417432043817
+Alaska Airlines Inc.	10	933.300000	5.584271	7.966570	1.334066503748052	4.54565548987969
+Allegiant Air	14	627.642857	1.524525	0.000000	\N	5.443990731770559
+American Airlines Inc.	52	948.596154	6.984106	1.954386	1.1014588867155726	1.5481387667160047
+Ameristar Air Cargo	2	1238.500000	0.000000	0.322971	\N	\N
+Avjet Corporation	4	621.750000	0.004825	0.000000	\N	19.270212908530887
+Boutique Air	23	236.521739	1.064338	0.000000	\N	5.825930560771898
+CFM Inc d/b/a Contour Airlines	2	850.000000	0.015882	0.000000	\N	536.2826086956521
+Compass Airlines	2	655.000000	0.225191	0.000000	\N	\N
+Delta Air Lines Inc.	67	953.641791	4.023555	3.434047	1.2086722931310232	1.9314286964342593
+Empire Airlines Inc.	3	120.000000	0.000000	273.644444	\N	\N
+Endeavor Air Inc.	2	1069.000000	0.131899	0.000000	\N	\N
+Envoy Air	6	858.666667	2.134317	0.227873	1.5182060200008036	3.7123665192365927
+ExpressJet Airlines Inc.	10	788.800000	0.843940	0.000000	\N	3.4158491405068254
+Federal Express Corporation	43	696.023256	0.000000	781.269070	\N	\N
+Frontier Airlines Inc.	180	953.850000	4.076689	0.000000	\N	3.668369569802108
+GoJet Airlines LLC d/b/a United Express	66	665.484848	2.162902	0.000000	\N	1.9338641336933624
+Great Lakes Airlines	16	261.687500	0.882971	0.000000	\N	2.6393795375616533
+Horizon Air	2	1068.000000	0.949438	0.000000	\N	\N
+Jet Aviation Flight Services, Inc.	6	908.833333	0.001650	0.000000	\N	8.05060900871008
+JetBlue Airways	7	1552.285714	2.750690	0.000000	\N	8.746028562183959
+Kalitta Charters II	2	913.500000	0.000000	9.718664	\N	\N
+Mesa Airlines Inc.	7	603.285714	3.937485	0.375799	1.0666145914501892	6.35612747476052
+Miami Air International	3	1253.666667	0.007179	0.000000	\N	2.5381078306404534
+Omni Air International LLC	1	628.000000	0.000000	0.000000	\N	\N
+Peninsula Airways Inc.	13	215.846154	1.188881	0.000000	\N	2.982593534985849
+Republic Airlines	73	719.356164	1.047722	0.000000	\N	1.929553510492207
+SkyWest Airlines Inc.	341	666.055718	1.939575	0.000000	\N	1.8916596563237573
+Southern Air Inc.	2	1069.000000	0.000000	495.066885	\N	\N
+Southwest Airlines Co.	305	982.485246	5.521585	10.431602	1.3110387011932434	2.211443962317756
+Spirit Air Lines	22	917.681818	5.586062	0.000000	\N	6.371966491605627
+Sun Country Airlines d/b/a MN Airlines	12	610.500000	1.120530	0.128037	1.0131521576649647	5.414574931432519
+Swift Air, LLC	9	743.333333	0.060837	0.000000	\N	0.9990465469909656
+Tradewind Aviation	1	604.000000	0.003311	0.000000	\N	\N
+Trans States Airlines	79	528.481013	2.195210	0.000000	\N	2.530470151764803
+United Air Lines Inc.	479	1012.194154	3.252324	4.956732	0.4158107029947383	1.8020794876171704
+United Parcel Service	23	767.391304	0.000000	865.948555	\N	\N
+USA Jet Airlines Inc.	2	1018.500000	0.000000	0.265096	\N	\N
+Via Airlines d/b/a Charter Air Transport	2	665.000000	0.490226	0.000000	\N	\N
+Virgin America	4	967.000000	5.485781	0.000000	\N	\N
